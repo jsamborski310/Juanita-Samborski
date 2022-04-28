@@ -1,6 +1,6 @@
 import React from 'react'
-import personalProjectList from '../data/personalProjectsList.json'
-import Accordion from './Accordion';
+import personalProjectList from '../../data/personalProjectsList.json'
+import Accordion from '../../components/Home/Accordion';
 
 
 export default function PersonalProjects() {
