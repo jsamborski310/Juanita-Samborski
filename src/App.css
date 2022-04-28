@@ -1,0 +1,160 @@
+@import-normalize;
+@import './css/about.css';
+@import './css/contact.css';
+@import './css/font.css';
+@import './css/header.css';
+@import './css/personalProjects.css';
+@import './css/toolkit.css';
+@import './css/accordion.css';
+@import './css/sidebar.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #dfdfdf;
+  font-weight:300;
+  line-height:1.7em;
+}
+h1 {
+  color:#ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 8rem;
+  text-transform: lowercase;
+}
+h2 {
+  color:#ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: lowercase;
+}
+
+/* Button, subtitle font. */
+h3 {
+  color:#ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+/* Project Titles */
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #dfdfdf;
+}
+/* Faded section title */
+h6 {
+  color:#ffffff22;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 11rem;
+  text-transform: lowercase;
+  z-index: -1;
+}
+
+/*  PRIMARY BUTTON */
+
+.primary-button__container {
+  display:flex;
+  gap:20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.primary-button__line {
+  width: 60px;
+  height: 10px;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+.primary-button {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  border-radius:0;
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
+  min-width:180px;
+  text-align: left;
+  z-index: 40;
+  cursor: pointer!important;
+}
+.primary-button:hover {
+  background-color: #f8f9fa50;
+  color: #ffffff;
+}
+
+/* BORDERLESS BUTTON */
+
+.borderless-button__container {
+  display:flex;
+  gap:20px;
+  align-items: center;
+}
+
+.borderless-button__line {
+  width: 60px;
+  height: 10px;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+.borderless-button {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  text-align: left;
+  border: none;
+  min-width:140px;
+}
+
+/* MEDIA QUERIES */ 
+
+@media (max-width: 968px) {
+  h6 {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 968px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .borderless-button__container {
+    display:none;
+  }
+}

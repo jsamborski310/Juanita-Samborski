@@ -1,0 +1,33 @@
+.personalProjects__container {
+    padding: 40px 100px;
+}
+.personalProjects__section-heading {
+    position:relative;
+    margin-bottom: 80px;
+}
+.personalProjects__heading-main {
+    position:absolute;
+    top:80px;
+    left:3px;
+}
+.personalProjects__accordion {
+
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+@media (max-width:968px) {
+    .personalProjects__heading-main {
+        top: 60px;
+    }
+    .personalProjects__accordion {
+        margin: 0 auto;
+        width: 100%;   
+    }
+}
+@media (max-width:768px) {
+    .personalProjects__container {
+        padding: 50px 40px;
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Dogeared",
+        "overview": "Javascript | Express.js | Handlebars | HTML | CSS",
+        "description": "This application was created as a space for readers to build a personal, digital library. Readers can attach notes and favorite quotes to the books in their library.",
+        "link": "https://github.com/jsamborski310/dogeared",
+        "image": "/images/dogeared.png",
+        "siteLink": "https://dogeared-2022.herokuapp.com/login"
+    },
+    {
+        "id": 2,
+        "title": "Holidaze",
+        "overview": "HTML | Javascript | CSS | API",
+        "description": "HoliDAZE is an application in which the user can search for a certain holiday with the option of filtering the results by country and date.",
+        "link": "https://github.com/jsamborski310/Holidaze",
+        "image": "/images/holidaze.png",
+        "siteLink": "https://jsamborski310.github.io/Holidaze/"
+    },
+    {
+        "id": 3,
+        "title": "Tech Talk",
+        "overview": "Javascript | HTML | CSS | Handlebars | Express.js | MySQL ",
+        "description": "A CMS-style blog site that allows users to publish articles, view blog posts, and post comments to share thoughts and opinions.",
+        "link": "https://github.com/jsamborski310/Tech-Talk",
+        "image": "/images/techTalk.png",
+        "siteLink": "https://js-tech-talk.herokuapp.com/"
+    },
+    {
+        "id": 4,
+        "title": "The Weather App",
+        "overview": "Javascript | HTML | CSS | Open Weather API",
+        "description": "A weather application so that a traveler may view weather information for various cities around the world so they may plan a trip accordingly.",
+        "link": "https://github.com/jsamborski310/The-Weather-App",
+        "image": "/images/weather.png",
+        "siteLink": "https://jsamborski310.github.io/The-Weather-App/"
+    }
+]

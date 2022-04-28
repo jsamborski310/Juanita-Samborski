@@ -1,0 +1,111 @@
+.sidebar__container {
+    position:relative;
+}
+
+.triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 180px solid #ffffff;
+    border-left: 180px solid transparent;
+    position: absolute;
+    right: 0;
+  }
+
+.sidebar__menu-icon-top-right:hover {
+    opacity:50%;
+    z-index:70;
+}
+
+.sidebar__sidebar {
+    width:65px;
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index:50;
+    
+}
+.sidebar__menu-footer-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sidebar__menu-contact-icon {
+    width:25px;
+    cursor: pointer;
+}
+.sidebar__menu-contact-icon:hover {
+    opacity: 50%;
+}
+.sidebar__menu-title {
+    color: #000000;
+    transform: rotate(-90deg);
+    margin-bottom: 40px;
+}
+.sidebar__menu-icon-section {
+    display: grid;
+    justify-items: center;
+}
+.sidebar__sidebar {
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0;
+}
+.sidebar__topright-menu-button {
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    right:30px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 60;
+}
+
+.sidebar__menu-button {
+    background-color: transparent;
+    border:none;
+}
+.sidebar__menu-button:hover {
+    opacity: 50%;
+}
+.sidebar__offcanvas-start {
+    width: calc(100% - 65px);
+    right:0;
+    left:auto;
+    background-color:black;
+}
+.sidebar__menu-items-list {
+    list-style-type: none;
+}
+.sidebar__close-menu {
+    top:20px;
+    right: -40px;
+    left:auto;
+    bottom:auto;
+    transform: rotate(0deg);
+}
+.sidebar__close-menu:hover {
+    opacity: 60%;
+}
+
+@media (max-width:768px) {
+    .sidebar__sidebar {
+        display: none;
+    }
+    .triangle-topright {
+    border-top: 150px solid #ffffff;
+    border-left: 150px solid transparent;
+    }
+    .sidebar__close-menu {
+        display:flex!important;
+        margin-top:-50px;
+        margin-bottom: -50px;
+    }
+    .offcanvas-header {
+        justify-content: flex-start;
+    }
+}
+

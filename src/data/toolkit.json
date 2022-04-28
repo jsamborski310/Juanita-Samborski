@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "WordPress",
+    "altText": "WordPress Icon",
+    "image": "/icons/wordpress.png"
+  },
+  {
+    "id": 2,
+    "title": "HTML",
+    "altText": "HTML Icon",
+    "image": "/icons/html.png"
+  },
+  {
+    "id": 3,
+    "title": "CSS",
+    "altText": "CSS Icon",
+    "image": "/icons/CSS3.png"
+  },
+  {
+    "id": 4,
+    "title": "Bootstrap",
+    "altText": "Bootstrap Icon",
+    "image": "/icons/bootstrap.png"
+  },
+  {
+    "id": 5,
+    "title": "Github",
+    "altText": "Github Icon",
+    "image": "/icons/github.png"
+  },
+  {
+    "id": 6,
+    "title": "React",
+    "altText": "React Icon",
+    "image": "/icons/react.png"
+  },
+  {
+    "id": 7,
+    "title": "Adobe XD",
+    "altText": "Adobe XD Icon",
+    "image": "/icons/AdobeXD.png"
+  },
+  {
+    "id": 8,
+    "title": "Adobe Illustrator",
+    "altText": "Adobe Illustrator Icon",
+    "image": "/icons/AdobeIllustrator.png"
+  },
+  {
+    "id": 9,
+    "title": "Adobe Photoshop",
+    "altText": "Adobe Photoshop Icon",
+    "image": "/icons/AdobePhotoshop.png"
+  },
+  {
+    "id": 10,
+    "title": "Adobe InDesign",
+    "altText": "Adobe InDesign Icon",
+    "image": "/icons/AdobeIndesign.png"
+  },
+  {
+    "id": 11,
+    "title": "JavaScript",
+    "altText": "JavaScript Icon",
+    "image": "/icons/javascript.png"
+  },
+  {
+    "id": 12,
+    "title": "Node JS",
+    "altText": "Node JS Icon",
+    "image": "/icons/nodejs.png"
+  },
+  {
+    "id": 13,
+    "title": "Express JS",
+    "altText": "Express JS Icon",
+    "image": "/icons/expressjs.png"
+  },
+  {
+    "id": 14,
+    "title": "MySQL",
+    "altText": "MySQL Icon",
+    "image": "/icons/mysql.png"
+  },
+  {
+    "id": 15,
+    "title": "Mongo DB",
+    "altText": "Mongo DB Icon",
+    "image": "/icons/mongoDB.png"
+  }
+]
