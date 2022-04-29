@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Ano Delivery",
+        "shortTitle": "Ano Delivery",
+        "role": "Design | Front End Development",
+        "number": "01",
+        "image": "/images/Ano-Delivery.jpg"
+    },
+    {
+        "id": 2,
+        "title": "File Evictions",
+        "shortTitle": "File Evictions",
+        "role": "UX/UI | Development | Project Management",
+        "number": "02",
+        "image": "/images/Ano-Delivery.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Voyager Space Holdings",
+        "shortTitle": "Voyager",
+        "role": "Design | Development",
+        "number": "03",
+        "image": "/images/Voyager-LAB.jpg"
+    }
+]
+    
