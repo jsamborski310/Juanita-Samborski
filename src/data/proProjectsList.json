@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Ano Delivery",
-        "shortTitle": "Ano Delivery",
+        "shortTitle": "Delivery",
         "role": "Design | Front End Development",
         "number": "01",
         "image": "/images/Ano-Delivery.jpg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "title": "File Evictions",
-        "shortTitle": "File Evictions",
+        "shortTitle": "Evictions",
         "role": "UX/UI | Development | Project Management",
         "number": "02",
         "image": "/images/Ano-Delivery.jpg"
@@ -22,6 +22,30 @@
         "role": "Design | Development",
         "number": "03",
         "image": "/images/Voyager-LAB.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Multiverse Publishing",
+        "shortTitle": "Publishing",
+        "role": "Design | Development",
+        "number": "04",
+        "image": "/images/Multiverse.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Boliver Threads",
+        "shortTitle": "Threads",
+        "role": "Design | Development",
+        "number": "05",
+        "image": "/images/Bolivar-LAB.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Society of Advanced Bronchoscopy",
+        "shortTitle": "Bronch",
+        "role": "Design | Development",
+        "number": "06",
+        "image": "/images/SAB-Login-LAB.jpg"
     }
 ]
     

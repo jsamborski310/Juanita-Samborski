@@ -1,9 +1,16 @@
 .proProjects__container {
-    height: 100vh;
-    padding: 100px;
+    /* height: 100vh; */
+    padding: 100px 0 100px 100px;
+    background-image: url(/public/images/abstract-grid-dots.png);
+    background-repeat: no-repeat;
+    background-size: 12vw;
+    background-position: center left;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .proProjects__tabs {
-    height: 150px;
+    height: 120px;
 }
 .proProjects__tab-number {
     transform: rotate(-90deg);
@@ -41,4 +48,35 @@
     position: absolute;
     top: 0;
     z-index: 20;
+}
+@media (max-width:991px) {
+    .proProjects__tab-info {
+        display:none;
+    }
+    .proProjects__nav-item {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: end;
+    }
+    .proProjects__tab-number {
+        width: 30px;
+    }
+    .proProjects__tab-number > h2 {
+        font-size: 40px;
+    }
+    .proProjects__tab-container {
+        margin: 90px;
+    }
+    .proProjects__inner-container {
+        padding: 40px;
+        /* display: flex;
+        justify-content: center;
+        align-content: center; */
+    }
+    .proProjects__image {
+        width: 400px;
+        height: 500px;
+    }
+    
 }

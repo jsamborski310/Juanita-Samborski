@@ -7,18 +7,17 @@ export default function ProfessionalProjects() {
     <section id="proProjects" className="proProjects__container anchor ">
       <Tab.Container
         id="left-tabs-example"
-        defaultActiveKey="first"
+        defaultActiveKey="1"
         className="proProjects__tab-container"
       >
-    {/* {proProjectList.map(({ id, title, role, number, image, shortTitle }) => ( */}
-        <Row>
-          <Col sm={6}>
-            {/* {proProjectList.map(({ id, title, role, number }) => ( */}
-              <Nav className="flex-column">
-                <Nav.Item>
-
-                  {/* TAB */}
-                  {proProjectList.map(({ id, title, role, number }) => (
+        <Row className="proProjects__inner-container">
+          <Col xs={12} sm={12} md={12} lg={6}>
+            <Nav 
+                // className="flex-column"
+            >
+              <Nav.Item className="proProjects__nav-item">
+                {/* TAB */}
+                {proProjectList.map(({ id, title, role, number }) => (
                   <Nav.Link
                     key={id}
                     eventKey={id}
@@ -27,49 +26,49 @@ export default function ProfessionalProjects() {
                     <div className="proProjects__tab-number">
                       <h2>{number}</h2>
                     </div>
-                    <div className="px-4 pt-3">
+                    <div className="px-4 pt-3 proProjects__tab-info">
                       <h4>{title}</h4>
                       <p>{role}</p>
                     </div>
                   </Nav.Link>
-                  ))}
-                </Nav.Item>
-              
-              </Nav>
-          
+                ))}
+              </Nav.Item>
+            </Nav>
           </Col>
 
-          <Col sm={6}>
-            {/* {proProjectList.map(({ id, shortTitle, number, image }) => ( */}
-              <Tab.Content>
-              {proProjectList.map(({ id, shortTitle, number, image }) => (
-                <Tab.Pane 
-                    key={id}
-                    eventKey={id}
-                >
-                  <div className="proProjects__project-container">
-                    <div className="proProjects__triangle"></div>
-                    <img
-                      className="proProjects__image"
-                      src={process.env.PUBLIC_URL + image}
-                      alt="Dinner table with friends eating restaurant food."
-                    />
+          <Col xs={12} sm={12} md={12} lg={6}>
+            <Tab.Content>
+              {proProjectList.map(
+                ({ id, title, shortTitle, number, image }) => (
+                  <Tab.Pane key={id} eventKey={id}>
+                    <div className="proProjects__project-container">
+                      <div className="proProjects__triangle"></div>
+                      <img
+                        className="proProjects__image"
+                        src={process.env.PUBLIC_URL + image}
+                        alt={title + "project preview"}
+                      />
 
-                    <div className="d-flex align-items-center justify-content-between proProjects__img-title">
-                      <div className="proProjects__number">
-                        <h1>{number}</h1>
+                      <div className="d-flex align-items-center justify-content-between proProjects__img-title">
+                        <div className="proProjects__number">
+                          <h1>{number}</h1>
+                        </div>
+                        <h2>{shortTitle}</h2>
                       </div>
-                      <h2>{shortTitle}</h2>
                     </div>
-                  </div>
-                </Tab.Pane>
-             ))}
-              </Tab.Content>
-       
+                  </Tab.Pane>
+                )
+              )}
+            </Tab.Content>
 
+            <div className="primary-button__container">
+              <hr className="primary-button__line" />
+              <a href="/projects" target="_blank">
+                <button className="primary-button">Case Studies</button>
+              </a>
+            </div>
           </Col>
         </Row>
-        {/* ))} */}
       </Tab.Container>
     </section>
   );
