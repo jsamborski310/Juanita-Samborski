@@ -78,5 +78,8 @@
         width: 400px;
         height: 500px;
     }
+    .proProjects__container {
+        background-size: 17vw;
+    }
     
 }
