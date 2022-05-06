@@ -19,13 +19,13 @@ export default function SidebarMain() {
     <div className='sidebarMain__container'>
 
     {/* Top Right Menu */}
-      <div>
+      <div className='sidebarMain__triangle-container'>
         <div className='sidebarMain__triangle-topright'></div>
 
         {/* Top Right Menu Button */}
         <button className='sidebarMain__topright-menu-button' onClick={handleShow}>
           <img
-              src={process.env.PUBLIC_URL + "/images/Menu-Icon.png"}
+              src={process.env.PUBLIC_URL + "/icons/Menu-icon-white.png"}
               alt="Hamburger Menu Icon."
               className='sidebarMain__menu-icon-top-right'
               height="25px"
@@ -54,7 +54,7 @@ export default function SidebarMain() {
       {/* Offset Menu Button Sidebar */}
           <button className='sidebarMain__menu-button' onClick={handleShow}>
             <img
-              src={process.env.PUBLIC_URL + "/images/Menu-Icon.png"}
+              src={process.env.PUBLIC_URL + "/icons/Menu-icon-white.png"}
               alt="Hamburger Menu Icon."
               className='sidebarMain__menu-icon'
               height="25px"
@@ -93,7 +93,7 @@ export default function SidebarMain() {
 
         <a href="https://github.com/jsamborski310" rel='noreferrer' target="_blank">
           <img
-            src={process.env.PUBLIC_URL + "/icons/github-black.png"}
+            src={process.env.PUBLIC_URL + "/icons/github-white-2x.png"}
             alt="Github Icon."
             className='sidebarMain__menu-contact-icon' 
           />
@@ -101,7 +101,7 @@ export default function SidebarMain() {
 
         <a href="https://www.linkedin.com/in/juanita-samborski/" rel='noreferrer' target="_blank">
           <img
-            src={process.env.PUBLIC_URL + "/icons/linkedin-in-brands.png"}
+            src={process.env.PUBLIC_URL + "/icons/linkedin-white-2x.png"}
             alt="Linkedin Icon."
             className='sidebarMain__menu-contact-icon'         
           />  
@@ -109,7 +109,7 @@ export default function SidebarMain() {
 
         <a href="mailto:juanita@48fourteen.com">
           <img
-            src={process.env.PUBLIC_URL + "/icons/email-add-black.png"}
+            src={process.env.PUBLIC_URL + "/icons/email-white-2x.png"}
             alt="Email Icon."
             className='sidebarMain__menu-contact-icon'        
           />  
@@ -118,7 +118,7 @@ export default function SidebarMain() {
 
         <a href="https://twitter.com/SamborskiUp" rel='noreferrer' target="_blank">
           <img
-            src={process.env.PUBLIC_URL + "/icons/twitter-brands.png"}
+            src={process.env.PUBLIC_URL + "/icons/twitter-white-2x.png"}
             alt="Twitter Icon."
             className='sidebarMain__menu-contact-icon'       
           />     

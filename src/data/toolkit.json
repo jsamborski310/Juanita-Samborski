@@ -39,25 +39,25 @@
     "id": 7,
     "title": "Adobe XD",
     "altText": "Adobe XD Icon",
-    "image": "/icons/AdobeXD.png"
+    "image": "/icons/xd-2x.png"
   },
   {
     "id": 8,
     "title": "Adobe Illustrator",
     "altText": "Adobe Illustrator Icon",
-    "image": "/icons/AdobeIllustrator.png"
+    "image": "/icons/illustrator-2x.png"
   },
   {
     "id": 9,
     "title": "Adobe Photoshop",
     "altText": "Adobe Photoshop Icon",
-    "image": "/icons/AdobePhotoshop.png"
+    "image": "/icons/photoshop-2x.png"
   },
   {
     "id": 10,
     "title": "Adobe InDesign",
     "altText": "Adobe InDesign Icon",
-    "image": "/icons/AdobeIndesign.png"
+    "image": "/icons/indesign-2x.png"
   },
   {
     "id": 11,

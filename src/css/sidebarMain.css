@@ -2,13 +2,22 @@
     position:relative;
 }
 
+.sidebarMain__triangle-container {
+    /* width: 0;
+    height: 0; */
+    /* border-top: 180px solid #000000;
+    border-left: 180px solid transparent; */
+    display:flex;
+    justify-content: flex-end; 
+}
+
 .sidebarMain__triangle-topright {
     width: 0;
     height: 0;
     border-top: 180px solid #000000;
     border-left: 180px solid transparent;
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
   }
 
 .sidebarMain__menu-icon-top-right:hover {
