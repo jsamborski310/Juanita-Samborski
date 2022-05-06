@@ -18,6 +18,8 @@
     border-left: 180px solid transparent;
     /* position: absolute;
     right: 0; */
+    /* display:flex;
+    justify-content: flex-end; */
   }
 
 .sidebarMain__menu-icon-top-right:hover {

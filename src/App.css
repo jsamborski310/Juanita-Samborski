@@ -9,6 +9,7 @@
 @import './css/sidebar.css';
 @import './css/proProjects.css';
 @import './css/sidebarMain.css';
+@import './css/projects.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
