@@ -8,6 +8,7 @@
 @import './css/accordion.css';
 @import './css/sidebar.css';
 @import './css/proProjects.css';
+@import './css/sidebarMain.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -18,7 +19,6 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: black;
   overflow-x: hidden;
 }
 a {

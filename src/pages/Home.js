@@ -9,7 +9,7 @@ import ProfessionalProjects from '../components/Home/ProfessionalProjects';
 
 export default function Home() {
   return (
-    <>
+    <div style={{backgroundColor:"black"}}>
       <Sidebar/>
       <Header/>
       <About/>
@@ -17,6 +17,6 @@ export default function Home() {
       <Toolkit/>
       <PersonalProjects/>
       <Contact/>
-    </>
+    </div>
   )
 }

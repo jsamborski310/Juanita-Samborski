@@ -1,0 +1,111 @@
+.sidebarMain__container {
+    position:relative;
+}
+
+.sidebarMain__triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 180px solid #000000;
+    border-left: 180px solid transparent;
+    position: absolute;
+    right: 0;
+  }
+
+.sidebarMain__menu-icon-top-right:hover {
+    opacity:50%;
+    z-index:70;
+}
+
+.sidebarMain__sidebar {
+    width:65px;
+    background-color: #000000;
+    height: 100vh;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index:50;
+    
+}
+.sidebarMain__menu-footer-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sidebarMain__menu-contact-icon {
+    width:25px;
+    cursor: pointer;
+}
+.sidebarMain__menu-contact-icon:hover {
+    opacity: 50%;
+}
+.sidebarMain__menu-title {
+    color: #ffffff;
+    transform: rotate(-90deg);
+    margin-bottom: 40px;
+}
+.sidebarMain__menu-icon-section {
+    display: grid;
+    justify-items: center;
+}
+.sidebarMain__sidebar {
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0;
+}
+.sidebarMain__topright-menu-button {
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    right:30px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 60;
+}
+
+.sidebarMain__menu-button {
+    background-color: transparent;
+    border:none;
+}
+.sidebarMain__menu-button:hover {
+    opacity: 50%;
+}
+.sidebarMain__offcanvas-start {
+    width: calc(100% - 65px);
+    right:0;
+    left:auto;
+    background-color:black;
+}
+.sidebarMain__menu-items-list {
+    list-style-type: none;
+}
+.sidebarMain__close-menu {
+    top:20px;
+    right: -40px;
+    left:auto;
+    bottom:auto;
+    transform: rotate(0deg);
+}
+.sidebarMain__close-menu:hover {
+    opacity: 60%;
+}
+
+@media (max-width:768px) {
+    .sidebarMain__sidebar {
+        display: none;
+    }
+    .sidebarMain__triangle-topright {
+    border-top: 150px solid #000000;
+    border-left: 150px solid transparent;
+    }
+    .sidebarMain__close-menu {
+        display:flex!important;
+        margin-top:-50px;
+        margin-bottom: -50px;
+    }
+    .offcanvas-header {
+        justify-content: flex-start;
+    }
+}
+
