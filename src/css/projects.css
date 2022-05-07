@@ -1,14 +1,19 @@
 .projects__container {
+    margin-left:65px;
+    margin-right:-65px;
+}
+.projects__header-container {
     height:100vh;
     display: grid;
     align-content: flex-end;
     margin-top: -25vh;
     background: linear-gradient(to right, #000000 50%, #fff 50%);
 }
-.projects__hero-columns {
-    margin-left: calc(2 * var(--bs-gutter-x));
-    margin-right: calc(2 * var(--bs-gutter-x));
-}
+/* .projects__hero-columns { */
+    /* margin-left: calc(2 * var(--bs-gutter-x));
+    margin-right: calc(2 * var(--bs-gutter-x)); */
+/* } */
+/* TITLE */
 .projects__title {
     display:grid;
     justify-content: center;
@@ -27,6 +32,8 @@
     padding-right:50px;
     mix-blend-mode: difference;
 }
+
+/* CORNER LINES */
 .projects__corner-top {
     width: 100px;
     height:2px;
@@ -56,10 +63,33 @@
     background-color: #ffffff;
     mix-blend-mode: difference;
 }
+/* OVERVIEW TEXT */
 .projects__overview {
     mix-blend-mode: difference;
 }
 
+.projects__list-container {
+    padding:70px;
+}
+.projects__list-container h2,
+.projects__list-container p {
+    color: black;
+    text-transform: capitalize;
+}
+/* SKILLS LIST */
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+} 
+ li::before {
+     content: "■";
+    font-size: 1.1rem;  
+    margin-right:15px; 
+}
+
+
+/* MEDIA QUERIES */
 @media (max-width: 991px) {
     .projects__title h1 {
         font-size:9rem;
@@ -72,10 +102,14 @@
 }
 @media (max-width: 767px) {
     .projects__container {
+        margin-left:0;
+        margin-right:0;
+    }
+    .projects__header-container {
         background: linear-gradient(to bottom, #000000 50%, #fff 50%);
     }
     .projects__title {
-        margin-bottom: 22px;
+        margin-bottom: 50px;
         margin-left:0;
     }
 }
@@ -85,7 +119,7 @@
         margin-top: -60px;
     }
     .projects__title {
-        margin-bottom: 90px;
+        margin-bottom: 115px;
     }
 }
 @media (max-width: 574px) {
@@ -94,6 +128,6 @@
         margin-top: -60px;
     }
     .projects__title {
-        margin-bottom: 50px;
+        margin-bottom: 85px;
     }
 }
