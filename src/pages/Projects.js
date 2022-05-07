@@ -1,4 +1,5 @@
 import React from "react";
+import proProjectList from "../data/proProjectsList.json";
 
 export default function Projects() {
   return (
@@ -36,11 +37,12 @@ export default function Projects() {
 
     {/* PROJECTS LIST */}
 
-  <div className="projects__list-container">
+    {proProjectList.map(({ id, title, number, image, description, skills }) => (
+  <div key={id} className="projects__list-container">
     <div className="row d-flex">
       <div className="col-6">
-        <h2>Ano Delivery</h2>
-        <p>Online food ordering and delivery platform.</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
 
         <div className="d-flex">
           <ul className="projects__skills-list">
@@ -57,11 +59,12 @@ export default function Projects() {
       </div>
       <div className="col-6">
 
-        <img src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + image} alt={title + "project preview"} />
 
       </div>
     </div>
   </div>
+  ))}
 
     </section>
   );

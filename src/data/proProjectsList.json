@@ -5,7 +5,9 @@
         "shortTitle": "Delivery",
         "role": "Design | Front End Development",
         "number": "01",
-        "image": "/images/Ano-Delivery.jpg"
+        "image": "/images/Ano-Delivery.jpg",
+        "description": "Online food ordering and delivery platform",
+        "skills": ["Website Redesign", "HTML", "Frontend Development", "CSS"]
     },
     {
         "id": 2,
@@ -13,7 +15,9 @@
         "shortTitle": "Evictions",
         "role": "UX/UI | Development | Project Management",
         "number": "02",
-        "image": "/images/Ano-Delivery.jpg"
+        "image": "/images/Ano-Delivery.jpg",
+        "description": "Lorne ipsum",
+        "skills": ["Website Design", "WordPress Development", "Software UX/UI", "Project Management"]
     },
     {
         "id": 3,
@@ -21,7 +25,9 @@
         "shortTitle": "Voyager",
         "role": "Design | Development",
         "number": "03",
-        "image": "/images/Voyager-LAB.jpg"
+        "image": "/images/Voyager-LAB.jpg",
+        "description": "Loren Ipusum",
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
     },
     {
         "id": 4,
@@ -29,7 +35,9 @@
         "shortTitle": "Publishing",
         "role": "Design | Development",
         "number": "04",
-        "image": "/images/Multiverse.jpg"
+        "image": "/images/Multiverse.jpg",
+        "description": "Publishing company. Online book shop.",
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
     },
     {
         "id": 5,
@@ -37,7 +45,9 @@
         "shortTitle": "Threads",
         "role": "Design | Development",
         "number": "05",
-        "image": "/images/Bolivar-LAB.jpg"
+        "image": "/images/Bolivar-LAB.jpg",
+        "description": "Online monogram shop.",
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
     },
     {
         "id": 6,
@@ -45,7 +55,9 @@
         "shortTitle": "Bronch",
         "role": "Design | Development",
         "number": "06",
-        "image": "/images/SAB-Login-LAB.jpg"
+        "image": "/images/SAB-Login-LAB.jpg",
+        "description": "Loren ipsum",
+        "skills": ["Website Design", "WordPress Development", "Membership", "Subscriptions", "Event Tickets"]
     }
 ]
     
