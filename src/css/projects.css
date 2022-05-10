@@ -71,8 +71,7 @@
 .projects__list-container {
     padding:70px;
 }
-.projects__list-container h2,
-.projects__list-container p {
+.project__list-text {
     color: black;
     text-transform: capitalize;
 }
@@ -81,14 +80,50 @@ li {
     list-style-type: none;
     display: flex;
     align-items: center;
+    padding-bottom: 15px;
 } 
  li::before {
-     content: "■";
-    font-size: 1.1rem;  
+    width: 10px;
+    height:10px;
+    content: '';
+    background-color: black;
     margin-right:15px; 
 }
+.projects__skills-container {
+    margin-left:-30px;
+    margin-top: 30px;
+}
 
+/* BUTTON */
+.primary-button.dark-btn {
+    color: black;
+    border: 2px solid black;
+}
+.primary-button__line.dark-btn {
+    color: black;
+    border: 1px solid black;
+}
+.primary-button.dark-btn:hover {
+    background-color: black;
+}
 
+/* IMAGE */
+.project__image {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+
+}
+.project__image-container {
+    position:relative;
+}
+.project__number {
+    color: #ffffff;
+    position:absolute;
+    bottom:-35px;
+    left:-5px;
+    font-size: 6em;
+}
 /* MEDIA QUERIES */
 @media (max-width: 991px) {
     .projects__title h1 {
