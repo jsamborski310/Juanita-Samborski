@@ -38,22 +38,22 @@ export default function Projects() {
       {/* PROJECTS LIST */}
 
       {proProjectList.map(
-        ({ id, title, number, image, description, skills }) => (
+        ({ id, title, number, image, description, skills, slug }) => (
           <div key={id} className="projects__list-container">
             <div className="row d-flex g-5">
-              <div className="col-6">
-                <h2 className="project__list-text" style={{ fontSize: "3em" }}>{title}</h2>
+
+              <div className="
+              col-12 col-sm-12 col-md-6 col-lg-6 
+              order-2 order-md-1 order-lg-1
+              ">
+                <h2 className="project__list-text" style={{ fontSize: "3em" }}>
+                  {title}
+                </h2>
                 <p className="project__list-text">{description}</p>
 
                 <div className="d-flex projects__skills-container">
-                  <ul className="projects__skills-list">
-                    {skills.slice(0, 2).map((skill) => {
-                      return <li>{skill}</li>;
-                    })}
-                  </ul>
-
-                  <ul className="projects__skills-list">
-                    {skills.slice(2).map((skill) => {
+                  <ul data-columns="2" className="projects__skills-list">
+                    {skills.map((skill) => {
                       return <li>{skill}</li>;
                     })}
                   </ul>
@@ -61,29 +61,30 @@ export default function Projects() {
 
                 {/* BUTTON */}
                 <div className="d-flex justify-content-end mx-5">
-                <div className="primary-button__container dark-btn">
-                  <hr className="primary-button__line dark-btn" />
-                  <a href="/projects" target="_blank">
-                    <button className="primary-button dark-btn">Case Studies</button>
-                  </a>
+                  <div className="primary-button__container dark-btn">
+                    <hr className="primary-button__line dark-btn" />
+                    <a href={/project/ + slug} target="_blank" rel="noreferrer">
+                      <button className="primary-button dark-btn">
+                        Case Studies
+                      </button>
+                    </a>
+                  </div>
                 </div>
-                </div>
-
               </div>
 
-              <div className="col-6">
-
+              {/* IMAGE */}
+              <div className="
+              col-12 col-sm-12 col-md-6 col-lg-6
+              order-1 order-md-2 order-lg-2
+              ">
                 <div className="project__image-container">
                   <h2 className="project__number">{number}</h2>
-                <img
-                  src={process.env.PUBLIC_URL + image}
-                  alt={title + "project preview"}
-                  className="project__image"
-                />
+                  <img
+                    src={process.env.PUBLIC_URL + image}
+                    alt={title + "project preview"}
+                    className="project__image"
+                  />
                 </div>
-
-
-
               </div>
             </div>
           </div>

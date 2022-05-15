@@ -7,7 +7,8 @@
         "number": "01",
         "image": "/images/Ano-Delivery.jpg",
         "description": "Online food ordering and delivery platform",
-        "skills": ["Website Redesign", "HTML", "Frontend Development", "CSS"]
+        "skills": ["Website Redesign", "HTML", "Frontend Development", "CSS"],
+        "slug": "ano-delivery"
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "number": "02",
         "image": "/images/Ano-Delivery.jpg",
         "description": "Lorne ipsum",
-        "skills": ["Website Design", "WordPress Development", "Software UX/UI", "Project Management"]
+        "skills": ["Website Design", "WordPress Development", "Software UX/UI", "Project Management"],
+        "slug": "file-evictions"
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "number": "03",
         "image": "/images/Voyager-LAB.jpg",
         "description": "Loren Ipusum",
-        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
+        "slug": "voyager-space-holdings"
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "number": "04",
         "image": "/images/Multiverse.jpg",
         "description": "Publishing company. Online book shop.",
-        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
+        "slug": "multiverse-publishing"
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@
         "number": "05",
         "image": "/images/Bolivar-LAB.jpg",
         "description": "Online monogram shop.",
-        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"]
+        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
+        "slug": "boliver-threads"
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@
         "number": "06",
         "image": "/images/SAB-Login-LAB.jpg",
         "description": "Loren ipsum",
-        "skills": ["Website Design", "WordPress Development", "Membership", "Subscriptions", "Event Tickets"]
+        "skills": ["Website Design", "WordPress Development", "Membership", "Subscriptions", "Event Tickets"],
+        "slug": "society-of-advanced-bronchoscopy"
     }
 ]
     
