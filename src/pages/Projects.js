@@ -3,7 +3,7 @@ import proProjectList from "../data/proProjectsList.json";
 
 export default function Projects() {
   return (
-    <section className="projects__container">
+    <div className="projects__container">
       <div className="projects__header-container">
         {/* HEADER SECTION */}
         {/* -----Page Title----- */}
@@ -63,7 +63,7 @@ export default function Projects() {
                 <div className="d-flex justify-content-end mx-5">
                   <div className="primary-button__container dark-btn">
                     <hr className="primary-button__line dark-btn" />
-                    <a href={/project/ + slug} target="_blank" rel="noreferrer">
+                    <a href={/project/ + slug}>
                       <button className="primary-button dark-btn">
                         Case Studies
                       </button>
@@ -90,6 +90,6 @@ export default function Projects() {
           </div>
         )
       )}
-    </section>
+    </div>
   );
 }

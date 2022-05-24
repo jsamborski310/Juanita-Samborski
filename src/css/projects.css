@@ -70,9 +70,10 @@
 
 .projects__list-container {
     padding:70px;
+    background-color: white;
 }
 .project__list-text {
-    color: black;
+    /* color: black; */
     text-transform: capitalize;
 }
 /* SKILLS LIST */
@@ -119,6 +120,7 @@ li {
     height: 400px;
     width: 600px;
     object-fit: cover;
+    filter: brightness(0.9);
 
 }
 .project__image-container {
@@ -130,6 +132,7 @@ li {
     bottom:-35px;
     left:-5px;
     font-size: 6em;
+    z-index: 10;
 }
 /* MEDIA QUERIES */
 @media (max-width: 991px) {

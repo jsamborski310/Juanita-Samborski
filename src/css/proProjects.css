@@ -11,6 +11,7 @@
 }
 .proProjects__tabs {
     height: 120px;
+    cursor: pointer;
 }
 .proProjects__tab-number {
     transform: rotate(-90deg);

@@ -39,8 +39,11 @@ export default function ProfessionalProjects() {
           <Col xs={12} sm={12} md={12} lg={6}>
             <Tab.Content>
               {proProjectList.map(
-                ({ id, title, shortTitle, number, image }) => (
+                ({ id, title, shortTitle, number, image, slug }) => (
                   <Tab.Pane key={id} eventKey={id}>
+
+
+
                     <div className="proProjects__project-container">
                       <div className="proProjects__triangle"></div>
                       <img
@@ -56,6 +59,9 @@ export default function ProfessionalProjects() {
                         <h2>{shortTitle}</h2>
                       </div>
                     </div>
+
+
+
                   </Tab.Pane>
                 )
               )}
