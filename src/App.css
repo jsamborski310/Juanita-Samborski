@@ -38,6 +38,8 @@ p {
   line-height:1.7em;
   /* --switch: calc((var(--light) - var(--threshold)) * -100%);
   color: hsl(0, 0%, var(--switch)); */
+  /* filter: invert(1); */
+  filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(0);
 }
 h1 {
   color:#ffffff;

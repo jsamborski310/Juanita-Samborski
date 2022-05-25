@@ -29,6 +29,7 @@ export default function Ano() {
             <div className="col-5">
                 <h3>Client</h3>
                 <p>Ano Delivery</p>
+                <p>Loren Ipsum dolor et tu si te.</p>
 
             </div>
             <div className="col-7">

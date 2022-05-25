@@ -49,20 +49,24 @@ function App() {
 
     // const textColour = brightness > 125 ? "blue" : "pink";
 
-let textColour = '';
+// -----------------------
+// let textColour = '';
 
-    const backgroundColour = window.getComputedStyle(document.body, null).getPropertyValue('background-color');
+//     const backgroundColour = window.getComputedStyle(document.body).getPropertyValue('background-color');
+   
+//         if (backgroundColour === "#000000" || "black" || "rgb(0,0,0)" ) {
+//           textColour = "#ffffff";
+//           document.body.style.color = textColour;
+        
+//         } 
+//         else if (backgroundColour === "#ffffff" || "white" || "rgb(255, 255, 255)") {
+//           textColour = "#000000";
+//           document.body.style.color = textColour;
+//         } 
 
+//         console.log("text", textColour, "background", backgroundColour);
+// --------------------
 
-        if (backgroundColour === "#000000" || "black" || "rgb(255, 255, 255)" ) {
-          textColour = "#ffffff";
-          document.body.style.color = textColour;
-        } else {
-          textColour = "#000000";
-          document.body.style.color = textColour;
-        } 
-
-        console.log("text", textColour, "background", backgroundColour)
 
     // const backgroundColour = brightness < 125 ? "white" : "black";
     // const backgroundColour = "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ")";
@@ -76,8 +80,10 @@ let textColour = '';
     
     // document.body.style.backgroundColor = backgroundColour;
 
-    
+// -------------
 
+
+  
   }
 
   setContrast()
