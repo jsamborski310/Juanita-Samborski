@@ -2,12 +2,14 @@
     height:100vh;
     display: flex;
     justify-content: flex-end;
+    /* background-color: #ffffff; */
 }
 .project__details-container {
     margin-left: 65px;
     margin-right: -65px;
     padding: 20px 50px;
-    background-color: white;
+    /* color: #000000; */
+    /* background-color: #ffffff; */
 }
 .project__main-image {
     width: calc(100% - 65px);
@@ -30,6 +32,7 @@
     font-size: 300px;
     opacity:0.25;
     left:80px;
+    color: #ffffff;
 }
 .project__main-title {
     font-family: 'Playfair Display', serif;

@@ -38,12 +38,14 @@ export default function Sidebar() {
 
       {/* Logo */}
         <div>
-          <img
-            src={process.env.PUBLIC_URL + "/images/Logo.png"}
-            alt="Juanita Samborski Logo."
-            className='sidebar__logo'
-            height="60px"
-          />
+        <a href="/" rel='noreferrer' target="_blank">
+            <img
+              src={process.env.PUBLIC_URL + "/images/Logo.png"}
+              alt="Juanita Samborski Logo."
+              className='sidebar__logo'
+              height="60px"
+            />
+          </a>
         </div>
 
       {/* Menu Hamburger */}

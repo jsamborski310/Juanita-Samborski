@@ -1,7 +1,7 @@
 .accordion__accordion-item {
     background-color: transparent;
-    color: #ffffff;
-    border-bottom: 1px solid #dfdfdf;
+    color: var(--light);
+    border-bottom: 1px solid var(--light);
     margin: 30px 0 30px 0;
     padding-left: 40px;
 }
@@ -18,7 +18,12 @@
 .accordion__link {
    display: flex;
    align-content: center;
+   color: var(--light);
 }
+.accordion__link:hover {
+    color: var(--light);
+    opacity: 0.5;
+ }
 .accordion__link p {
     margin-left: 20px;
     margin-top:3px;

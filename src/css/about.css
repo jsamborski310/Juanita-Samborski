@@ -2,7 +2,7 @@
     height: 100vh;
     padding: 70px;
     position:relative;
-    background-color: #000000;
+    color: var(--light);
 }
 .about__container-background img {
     position: absolute;

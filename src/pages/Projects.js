@@ -78,7 +78,7 @@ export default function Projects() {
               order-1 order-md-2 order-lg-2
               ">
                 <div className="project__image-container">
-                  <h2 className="project__number">{number}</h2>
+                  <p className="project__number">{number}</p>
                   <img
                     src={process.env.PUBLIC_URL + image}
                     alt={title + "project preview"}

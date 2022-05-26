@@ -17,10 +17,9 @@
   margin:0;
   padding:0;
 }
-/* :root {
-  --light: 20;
-  --threshold: 60;
-} */
+:root {
+  --light: #dfdfdf;
+}
 html {
   overflow-x: hidden;
 }
@@ -39,7 +38,9 @@ p {
   /* --switch: calc((var(--light) - var(--threshold)) * -100%);
   color: hsl(0, 0%, var(--switch)); */
   /* filter: invert(1); */
-  filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(0);
+  /* filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(0); */
+  /* filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(1);
+  -webkit-filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(1); */
 }
 h1 {
   color:#ffffff;
