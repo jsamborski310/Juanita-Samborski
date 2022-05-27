@@ -139,13 +139,13 @@ export default function Ano() {
           <h3 className="mb-5">Typeface</h3>
           <img 
             src={process.env.PUBLIC_URL + "/images/ano-delivery-typeface.png"} 
-            width="100%"
+            width="50%"
             alt="Screenshots of typeface."
           />
-          <h3 className="mb-5">Styles</h3>
+          <h3 className="mb-5 mt-5">Styles</h3>
           <img 
             src={process.env.PUBLIC_URL + "/images/ano-delivery-styles.png"} 
-            width="100%"
+            width="80%"
             alt="Screenshots of font styles."
           />
         </div>
