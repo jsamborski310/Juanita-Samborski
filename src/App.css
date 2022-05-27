@@ -72,7 +72,7 @@ h4 {
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: capitalize;
-  color: #dfdfdf;
+  /* color: #dfdfdf; */
 }
 /* Faded section title */
 h6 {
@@ -82,6 +82,15 @@ h6 {
   font-size: 11rem;
   text-transform: lowercase;
   z-index: -1;
+}
+
+/* SPACING */
+
+.pe-6 {
+  padding-right: 5rem;
+}
+.pe-7 {
+  padding-right: 6rem;
 }
 
 /*  PRIMARY BUTTON */

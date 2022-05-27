@@ -5,11 +5,15 @@
     /* background-color: #ffffff; */
 }
 .project__details-container {
+    width: calc(100% - 100px);
     margin-left: 65px;
-    margin-right: -65px;
-    padding: 20px 50px;
+    /* margin-right: -65px; */
+    padding: 20px 100px;
     /* color: #000000; */
     /* background-color: #ffffff; */
+}
+.project__details-section {
+    margin-bottom: 40px;
 }
 .project__main-image {
     width: calc(100% - 65px);
@@ -42,9 +46,47 @@
     left: 130px;
 }
 .project__main-info {
-    margin-bottom: -40vh;
+    margin-bottom: -165px;
+}
+.project__tools-box {
+    background-color: #000000;
+    color: var(--light);
+    padding: 80px 50px;
+}
+.project__tool-list {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.5em;
 }
 
+/* STYLE GUIDE */
+
+.project__style-guide-box {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(4, [col] 215px ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+    background-color: #fff;
+    color: #444;
+  }
+
+  .project__style-guide-box-desc {
+    grid-column: col / span 2;
+    grid-row: row ;
+  }
+  .project__style-guide-blank {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+  }
+  .project__style-guide-typo {
+    grid-column: col / span 3 ;
+    grid-row: row 2 ;
+  }
+  .project__style-guide-comp {
+    grid-column: col 4 / span 1 ;
+    grid-row: row 2 ;
+  }
+ 
 @media (max-width: 768px) {
     .project__main-image {
         width: 100%;
