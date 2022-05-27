@@ -125,7 +125,7 @@ export default function Ano() {
       </div>
       
       {/* STYLE GUIDE */}
-      <div className="pt-5 project__style-guide-box">
+      <div className="pt-5 pb-5 project__style-guide-box">
         <div className="project__style-guide-box-desc">
           <h4 className="mb-5">Style Guide</h4>
           <p>
@@ -135,7 +135,7 @@ export default function Ano() {
         <div className="project__style-guide-blank">
         </div>
 
-        <div className="project__style-guide-typo">
+        <div className="mt-5 project__style-guide-typo">
           <h3 className="mb-5">Typeface</h3>
           <img 
             src={process.env.PUBLIC_URL + "/images/ano-delivery-typeface.png"} 
@@ -163,12 +163,58 @@ export default function Ano() {
             alt="Screenshots of buttons."
           />
         </div>
-        
+      </div>
+
+</div> 
+
+      {/* LAYING DOWN THE DESIGN */}
+      <div className="project__layout-container mt-5">
+        {/* <div className="col-6 pt-5"> */}
+        <div className="project__layout-container-inner">
+        <div className="pt-5 project__layout-images">
+
+          <img 
+            src={process.env.PUBLIC_URL + "/images/ano-delivery-home.png"} 
+            className="img-fluid w-100 mb-5 project__images"
+            alt="Ano Delivery home page."
+          />
+          <img 
+            src={process.env.PUBLIC_URL + "/images/ano-delivery-restaurant.png"} 
+            className="img-fluid w-100 mb-5 project__images"
+            alt="Ano Delivery restaurant page."
+          />
+          <img 
+            src={process.env.PUBLIC_URL + "/images/ano-delivery-cart.png"} 
+            className="img-fluid w-100 mb-5 project__images"
+            alt="Ano Delivery home page."
+          />
+
+
+        </div>
+        <div className="project__layout-desc">
+          <div>
+            <h4 className="mb-5">Laying Down the UI</h4>
+            <p>
+              Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
+            </p>
+          </div>
+        </div>
+        </div>
+
       </div>
 
 
+
+    {/* DESIGN DETAILS */}
+    {/* <div className="row">
+      <h4>Loren Ipsum</h4>
+      <p>
+        Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.         
+      </p>
+    </div> */}
+
 {/* END */}
-        </div>
+        {/* </div> */}
     </div>
   );
 }
