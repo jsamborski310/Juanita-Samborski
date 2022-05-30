@@ -1,97 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger)
 
 export default function Ano() {
 
-  console.clear();
+useEffect ( () => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to('#layoutImages', {
+    scrollTrigger: {
+      trigger: "#layoutImages",
+        start: "top top",
+        // end: "+=100%",
+        // pinSpacing: "true",
+        end: "bottom bottom",
+        pin: ".project__black-background",
+        scrub: true,
+        nullTargetWarn: false, 
+        // markers: "true",
+    }
+  })
+}, [])
 
-  // ScrollTrigger.create({
-   
-  //   // scroller: "#mainContainer",
-  //   // trigger: "#description",
-  //   trigger: "#layoutContainer",
-  //   start: "top 15px",
-  //   endTrigger: "#layoutContainer",
-  //   // end: "+=1000",
-
-  //   end: "bottom bottom",
-  //   // pin: true,
-  //   // pin: true,
-  //   // pinnedContainer: '#layoutContainer',
-  //   // pinType: "fixed",
-  //   // pinType: "transform",
-  //   pin: "#layoutContainer",
-  //   // pin: ".project__layout-content-inner",
-   
-  //   // pinSpacing: false,
-  //   // scrub:1,
-  //   scrub:true,
-  //   nullTargetWarn: false, 
-  //   // markers: "true"
-  // });
-
-  // ScrollTrigger.create({
-
-  //   trigger: "#layoutContainer",
-  //   start: "top top",
-  //   // endTrigger: "#layoutContainer",
-  //   endTrigger: "#layoutImages",
-  //   // end: "+=1000",
-  //   end: "bottom bottom",
-  //   // pinnedContainer: "#mainContainer",
-  //   pin: "#layoutContainer",
-  //   scrub:true,
-  //   nullTargetWarn: false, 
-  //   markers: "true",
-  // });
-
-  // ScrollTrigger.create({
-
-  //   trigger: "#mainContainer",
-  //   start: "top top",
-  //   // endTrigger: "#layoutContainer",
-  //   endTrigger: "#mainImages",
-  //   // end: "+=1000",
-  //   end: "bottom bottom",
-  //   pinnedContainer: "#layoutContainer",
-  //   pin: "#mainContainer",
-  //   scrub:true,
-  //   nullTargetWarn: false, 
-  //   markers: "true",
-  // });
-  ScrollTrigger.create({
-
-    trigger: "#layoutImages",
-    start: "top top",
-    // endTrigger: "#layoutImages",
-    end: "bottom bottom",
-    pin: ".project__black-background",
-    scrub: true,
-    nullTargetWarn: false, 
-    markers: "true"
-  });
-
-  ScrollTrigger.create({
-
-    trigger: "#layoutImages",
-    start: "top top",
-    // endTrigger: "#layoutImages",
-    end: "bottom bottom",
-    pin: ".project__layout-content-inner",
-    scrub: true,
-    nullTargetWarn: false, 
-    markers: "true"
-  });
-
- 
-
-  ScrollTrigger.refresh();
+useEffect ( () => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to('#layoutImages', {
+    scrollTrigger: {
+      trigger: "#layoutImages",
+      start: "top top",
+      // end: "+=100%",
+      // pinSpacing: "true",
+      end: "bottom bottom",
+      pin: '#layoutContent',
+      scrub: true,
+      nullTargetWarn: false, 
+      // markers: "true",
+    }
+  })
+}, [])
 
 
 // -----------------------------------
+
   return (
     <div>
       {/* HEADER */}
@@ -281,11 +231,11 @@ export default function Ano() {
 
       {/* LAYING DOWN THE DESIGN */}
     
-        <div id="mainContainer" className="project__layout-container">
+        <div id="mainContainer" className="project__layout-container clearfix">
 
         <div id="blackContainer" className="project__black-background"></div>
       
-          <div id="layoutContainer" className="project__layout-container-inner">
+          <div id="layoutContainer" className="project__layout-container-inner clearfix">
             
             
 
@@ -335,12 +285,14 @@ export default function Ano() {
      
 
       {/* DESIGN DETAILS */}
-      {/* <div>
+      <div className="project__details-container project__other-details row">
+        <div className="col">
         <h4>Loren Ipsum</h4>
         <p>
           Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.         
         </p>
-    </div> */}
+        </div>
+    </div>
 
 {/* END */}
     </div>
