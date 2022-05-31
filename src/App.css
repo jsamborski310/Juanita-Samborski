@@ -11,6 +11,7 @@
 @import './css/sidebarMain.css';
 @import './css/projects.css';
 @import './css/project.css';
+@import './css/carousel.css';
 
 *, *::before, *::after {
   box-sizing: border-box;

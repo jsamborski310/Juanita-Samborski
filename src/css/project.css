@@ -173,6 +173,9 @@
    display: flex;
    justify-content: flex-end;
 }
+/* .project__carousel {
+    color: #000000;
+} */
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {

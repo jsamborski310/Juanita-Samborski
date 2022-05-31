@@ -1,46 +1,45 @@
 import React, { useEffect } from "react";
+import Carousel from "../components/Project/Carousel";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 export default function Ano() {
-
-useEffect ( () => {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.to('#layoutImages', {
-    scrollTrigger: {
-      trigger: "#layoutImages",
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#layoutImages", {
+      scrollTrigger: {
+        trigger: "#layoutImages",
         start: "top top",
         // end: "+=100%",
         // pinSpacing: "true",
         end: "bottom bottom",
         pin: ".project__black-background",
         scrub: true,
-        nullTargetWarn: false, 
+        nullTargetWarn: false,
         // markers: "true",
-    }
-  })
-}, [])
+      },
+    });
+  }, []);
 
-useEffect ( () => {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.to('#layoutImages', {
-    scrollTrigger: {
-      trigger: "#layoutImages",
-      start: "top top",
-      // end: "+=100%",
-      // pinSpacing: "true",
-      end: "bottom bottom",
-      pin: '#layoutContent',
-      scrub: true,
-      nullTargetWarn: false, 
-      // markers: "true",
-    }
-  })
-}, [])
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#layoutImages", {
+      scrollTrigger: {
+        trigger: "#layoutImages",
+        start: "top top",
+        // end: "+=100%",
+        // pinSpacing: "true",
+        end: "bottom bottom",
+        pin: "#layoutContent",
+        scrub: true,
+        nullTargetWarn: false,
+        // markers: "true",
+      },
+    });
+  }, []);
 
-
-// -----------------------------------
+  // -----------------------------------
 
   return (
     <div>
@@ -227,109 +226,173 @@ useEffect ( () => {
         </div>
       </div>
 
-
-
       {/* LAYING DOWN THE DESIGN */}
-    
-        <div id="mainContainer" className="project__layout-container clearfix">
 
+      <div id="mainContainer" className="project__layout-container clearfix">
         <div id="blackContainer" className="project__black-background"></div>
-      
-          <div id="layoutContainer" className="project__layout-container-inner clearfix">
-            
-                <div 
-                id="layoutImages"
-                className="project__container-images">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/ano-delivery-home.png"}
-                  className="img-fluid w-100 mb-5 project__images"
-                  alt="Ano Delivery home page."
-                />
-                <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/images/ano-delivery-restaurant.png"
-                  }
-                  className="img-fluid w-100 mb-5 project__images"
-                  alt="Ano Delivery restaurant page."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "/images/ano-delivery-cart.png"}
-                  className="img-fluid w-100 mb-5 project__images"
-                  alt="Ano Delivery home page."
-                />
-                </div>
 
+        <div
+          id="layoutContainer"
+          className="project__layout-container-inner clearfix"
+        >
+          <div id="layoutImages" className="project__container-images">
+            <img
+              src={process.env.PUBLIC_URL + "/images/ano-delivery-home.png"}
+              className="img-fluid w-100 mb-5 project__images"
+              alt="Ano Delivery home page."
+            />
+            <img
+              src={
+                process.env.PUBLIC_URL + "/images/ano-delivery-restaurant.png"
+              }
+              className="img-fluid w-100 mb-5 project__images"
+              alt="Ano Delivery restaurant page."
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/images/ano-delivery-cart.png"}
+              className="img-fluid w-100 mb-5 project__images"
+              alt="Ano Delivery home page."
+            />
+          </div>
 
-              <div id="layoutContent" className="project__layout-desc">
-                <div id="description" className="project__layout-content-inner">
-                  <h4 className="mb-5">Laying Down the UI</h4>
-                  <p>
-                    Loren ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-              </div>
-           
+          <div id="layoutContent" className="project__layout-desc">
+            <div id="description" className="project__layout-content-inner">
+              <h4 className="mb-5">Laying Down the UI</h4>
+              <p>
+                Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
           </div>
         </div>
-     
-     
+      </div>
 
       {/* DESIGN DETAILS */}
       <div className="project__details-container row align-content-center pt-5 pb-5">
         <div className="col-6"></div>
         <div className="col-6">
-        <h4>Loren Ipsum</h4>
-        <p>
-          Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.         
-        </p>
+          <h4>Loren Ipsum</h4>
+          <p>
+            Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
         </div>
-    </div>
+      </div>
 
-    {/* ADDITIONAL PROJECT IMAGES */}
-    <div className="project__details-container row align-content-center">
+      {/* ADDITIONAL PROJECT IMAGES */}
+      <div className="project__details-container row align-content-center">
         <div className="col-6">
-        <img
-          src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
-          className="img-fluid w-100 mb-5 project__images"
-          alt="Ano Delivery home page."
-        />
+          <img
+            src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
+            className="img-fluid w-100 mb-5 project__images"
+            alt="Ano Delivery home page."
+          />
         </div>
         <div className="col-6 d-flex align-items-center">
-        <img
-          src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
-          className="img-fluid w-100 mb-5"
-          alt="Ano Delivery home page."
-        />
+          <img
+            src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
+            className="img-fluid w-100 mb-5"
+            alt="Ano Delivery home page."
+          />
         </div>
-    </div>    
-
-    {/* MORE PROJECTS  */}
-    <div className="project__details-container project__more-projects">
-      <div className="project__more-projects-heading d-grid">
-        <h6>Projects</h6>
-        <h1>More Projects</h1>
       </div>
-         {/* Button */}
-         <div className="d-flex justify-content-end mx-5">
-                  <div className="primary-button__container dark-btn">
-                    <hr className="primary-button__line dark-btn" />
-                    <a href="/projects">
-                      <button className="primary-button dark-btn">
-                        Next Project
-                      </button>
-                    </a>
+
+      {/* MORE PROJECTS */}
+
+      <div className="project__details-container project__carousel">
+        <Carousel show={2}>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%", fontSize: "3em", color: "#000000" }}
+              />
+                <div className="d-flex">
+                  <p>01</p>
+                  <div>
+                    <h4>Ano Delivery</h4>
+                    <p>Role | Role </p>
                   </div>
                 </div>
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: 8 }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+                alt="placeholder"
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+         
+        </Carousel>
+      </div>
 
-      </div>              
-
-{/* END */}
+      {/* END */}
     </div>
   );
 }
