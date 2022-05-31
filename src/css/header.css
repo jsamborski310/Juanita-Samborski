@@ -4,6 +4,7 @@
     align-items: flex-end;
     padding: 0 50px 0 70px;
     position: relative;
+    color: #ffffff;
 }
 .header__section {
     display: flex;
@@ -26,7 +27,6 @@
     font-size: 26rem;
     margin-bottom: -80px;
     margin-left: -230px;
-
 }
 .square {
     height:30px;

@@ -76,7 +76,7 @@
 .projects__list-container h2 {
     color: #000000;
 }
-.project__list-text {
+.projects__list-text {
     /* color: black; */
     text-transform: capitalize;
 }
@@ -124,23 +124,23 @@
 }
 
 /* IMAGE */
-.project__image {
+.projects__image {
     height: 400px;
     width: 600px;
     object-fit: cover;
     filter: brightness(0.9);
 
 }
-.project__image-container {
+.projects__image-container {
     position:relative;
 }
-.project__number {
+.projects__number {
     position:absolute;
     bottom:-65px;
     left:-5px;
     font-size: 6em;
     z-index: 10;
-    color: #ffffff;
+    color: #ffffff;;
     font-weight: 700;
 }
 

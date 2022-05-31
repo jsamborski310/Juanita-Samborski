@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+   
 }
 .proProjects__tabs {
     height: 120px;
@@ -20,6 +21,7 @@
 }
 .proProjects__number {
     transform: rotate(-90deg);
+    color: #ffffff;
 }
 .proProjects__project-container {
     position: relative;

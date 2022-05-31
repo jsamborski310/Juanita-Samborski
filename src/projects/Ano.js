@@ -237,9 +237,6 @@ useEffect ( () => {
       
           <div id="layoutContainer" className="project__layout-container-inner clearfix">
             
-            
-
-              {/* <div className="pt-5 project__layout-images"> */}
                 <div 
                 id="layoutImages"
                 className="project__container-images">
@@ -262,7 +259,6 @@ useEffect ( () => {
                   alt="Ano Delivery home page."
                 />
                 </div>
-              {/* </div> */}
 
 
               <div id="layoutContent" className="project__layout-desc">
@@ -285,14 +281,53 @@ useEffect ( () => {
      
 
       {/* DESIGN DETAILS */}
-      <div className="project__details-container project__other-details row">
-        <div className="col">
+      <div className="project__details-container row align-content-center pt-5 pb-5">
+        <div className="col-6"></div>
+        <div className="col-6">
         <h4>Loren Ipsum</h4>
         <p>
           Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.         
         </p>
         </div>
     </div>
+
+    {/* ADDITIONAL PROJECT IMAGES */}
+    <div className="project__details-container row align-content-center">
+        <div className="col-6">
+        <img
+          src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
+          className="img-fluid w-100 mb-5 project__images"
+          alt="Ano Delivery home page."
+        />
+        </div>
+        <div className="col-6 d-flex align-items-center">
+        <img
+          src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
+          className="img-fluid w-100 mb-5"
+          alt="Ano Delivery home page."
+        />
+        </div>
+    </div>    
+
+    {/* MORE PROJECTS  */}
+    <div className="project__details-container project__more-projects">
+      <div className="project__more-projects-heading d-grid">
+        <h6>Projects</h6>
+        <h1>More Projects</h1>
+      </div>
+         {/* Button */}
+         <div className="d-flex justify-content-end mx-5">
+                  <div className="primary-button__container dark-btn">
+                    <hr className="primary-button__line dark-btn" />
+                    <a href="/projects">
+                      <button className="primary-button dark-btn">
+                        Next Project
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+      </div>              
 
 {/* END */}
     </div>

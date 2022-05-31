@@ -46,10 +46,10 @@ export default function Projects() {
               col-12 col-sm-12 col-md-6 col-lg-6 
               order-2 order-md-1 order-lg-1
               ">
-                <h2 className="project__list-text" style={{ fontSize: "3em" }}>
+                <h2 className="projects__list-text" style={{ fontSize: "3em" }}>
                   {title}
                 </h2>
-                <p className="project__list-text">{description}</p>
+                <p className="projects__list-text">{description}</p>
 
                 <div className="d-flex projects__skills-container">
                   <ul data-columns="2" className="projects__skills-list">
@@ -77,12 +77,12 @@ export default function Projects() {
               col-12 col-sm-12 col-md-6 col-lg-6
               order-1 order-md-2 order-lg-2
               ">
-                <div className="project__image-container">
-                  <p className="project__number">{number}</p>
+                <div className="projects__image-container">
+                  <p className="projects__number">{number}</p>
                   <img
                     src={process.env.PUBLIC_URL + image}
                     alt={title + "project preview"}
-                    className="project__image"
+                    className="projects__image"
                   />
                 </div>
               </div>

@@ -59,6 +59,7 @@
 }
 .contact__home-footer p {
     color: #000000;
+    margin-bottom: 0;
 }
 .contact__menu-footer-icons {
     display: flex;

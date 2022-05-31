@@ -1,9 +1,13 @@
 .personalProjects__container {
     padding: 40px 100px;
+    color: var(--light);
 }
 .personalProjects__section-heading {
     position:relative;
     margin-bottom: 80px;
+}
+.personalProjects__section-heading h6 {
+    color: #ffffff22;
 }
 .personalProjects__heading-main {
     position:absolute;
