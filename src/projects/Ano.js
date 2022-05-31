@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Carousel from "../components/Project/Carousel";
+import proProjectList from "../data/proProjectsList.json";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -309,85 +310,28 @@ export default function Ano() {
 
       <div className="project__details-container project__carousel">
         <Carousel show={2}>
-          <div>
-            <div style={{ padding: 8 }}>
+
+        {proProjectList.map(
+          ({ id, image, title, number, role }) => (
+
+            <div className="project__more-container">
+            <div key={id} style={{ padding: '50px' }}>
               <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%", fontSize: "3em", color: "#000000" }}
+                src={process.env.PUBLIC_URL + image}
+                alt={title}
+                className="project__more-images"
               />
-                <div className="d-flex">
-                  <p>01</p>
+                <div className="d-flex align-items-center">
+                  <p className="project__more-number pe-4">{number}</p>
                   <div>
-                    <h4>Ano Delivery</h4>
-                    <p>Role | Role </p>
+                    <h4>{title}</h4>
+                    <p>{role}</p>
                   </div>
                 </div>
             </div>
           </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: 8 }}>
-              <img
-                src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
-                alt="placeholder"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
+
+        ))}      
          
         </Carousel>
       </div>

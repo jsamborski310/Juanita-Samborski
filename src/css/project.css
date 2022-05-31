@@ -176,6 +176,23 @@
 /* .project__carousel {
     color: #000000;
 } */
+.project__more-images {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.project__more-container:nth-child(even) {
+    margin-top: 50px;
+}
+
+.project__more-number {
+    font-size: 4em;
+    font-weight:700;
+}
+.project__more-container h4 {
+    margin-bottom: 0;
+}
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {
