@@ -60,7 +60,7 @@ export default function Carousel( props ) {
       <div className="project__details-container project__more-projects">
         <div className="project__more-projects-heading d-grid">
           <h6>Projects</h6>
-          <h1>More Projects</h1>
+          <h1>More</h1>
         </div>
         {/* Button */}
         <div className="d-flex justify-content-end mx-5">

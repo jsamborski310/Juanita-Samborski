@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Carousel from "../components/Project/Carousel";
+import ContactMain from "../components/ContactMain";
 import proProjectList from "../data/proProjectsList.json";
 
 import { gsap } from "gsap";
@@ -334,6 +335,12 @@ export default function Ano() {
         ))}      
          
         </Carousel>
+     
+
+      {/* CONTACT FORM */}
+
+      <ContactMain/>
+      
       </div>
 
       {/* END */}

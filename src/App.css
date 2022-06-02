@@ -12,6 +12,7 @@
 @import './css/projects.css';
 @import './css/project.css';
 @import './css/carousel.css';
+@import './css/contactMain.css';
 
 *, *::before, *::after {
   box-sizing: border-box;

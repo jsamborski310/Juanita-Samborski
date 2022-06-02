@@ -1,0 +1,49 @@
+.contactMain__container {
+    height: 100vh;
+}
+.contactMain__container * {
+    color: #000000;
+}
+
+/* FORM */
+
+.form-control {
+    border-width: 0 0 2px 0;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    line-height:1.7em;
+}
+.contactMain__form-button, 
+.contactMain__form-button:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.contactMain__form-button {
+    width: 100%;
+    padding:0;
+    margin-left: 10px;
+}
+.primary-button__line.contactMain,
+.primary-button.contactMain {
+    color: #000000;
+}
+.primary-button__line.contactMain {
+    border: 1px solid #000000;
+}
+.primary-button.contactMain {
+    border: 2px solid #000000;
+}
+.primary-button.contactMain:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+.primary-button__container.contactMain {
+    margin-left: -85px;
+    margin-top: 80px;
+}
+
