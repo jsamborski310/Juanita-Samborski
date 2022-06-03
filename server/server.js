@@ -1,8 +1,14 @@
+require('dotenv').config();
+
 // Loads required dependencies
 const express = require("express");
 const router = express.Router();
+
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+
+// const email = `${process.env.EMAIL}`;
+// const pass = `${process.env.PASS}`;
 
 // Sets up the server that runs on port 5000
 const app = express();
@@ -10,20 +16,23 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
-// app.listen(5000, () => console.log("Server Running"));
 
 // Setup Nodemailer
 
 const contactEmail = nodemailer.createTransport({
     host: "mail.tigertech.net",
-    // port: 587,
-    port: 465,
-    // secure: false,
-    secure: true,
+    port: 587,
+    // port: 465,
+    secure: false,
+    // secure: true,
     auth: {
-      user: "juanita@breakthroughwebsite.com",
-      pass: "********",
+      // user: email,
+      // pass: pass
+      user: process.env.EMAIL,
+      pass: process.env.PASS
     },
+    secureConnection: false,
+    tls: { ciphers: 'SSLv3' }
   });
 
   
