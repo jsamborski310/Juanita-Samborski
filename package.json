@@ -4,20 +4,21 @@
     "description": "",
     "main": "server/server.js",
     "scripts": {
-        "start": "node server --ignore client",
-        "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-        "install": "cd server && npm i && cd ../client && npm i",
+        "develop": "cd client && npm run start",
+        "install": "cd ../client && npm i",
         "build": "cd client && npm run build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "@material-ui/icons": "^4.11.3",
-        "dotenv": "^16.0.1",
-        "material-ui": "^0.20.2"
-    },
     "devDependencies": {
-        "concurrently": "^7.2.1"
+        "dotenv": "^16.0.1"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "google-auth-library": "^8.0.2",
+        "googleapis": "^100.0.0",
+        "nodemailer": "^6.7.5"
     }
 }
