@@ -38,8 +38,10 @@
     z-index: 0;
     cursor: pointer;
 }
+
 .proProjects__image:hover {
     cursor: pointer;
+    filter: grayscale(0%);
 }
 .proProjects__img-title {
     margin-top: -120px;
@@ -84,7 +86,7 @@
         align-content: center; */
     }
     .proProjects__image {
-        width: 400px;
+        width: 100%;
         height: 500px;
     }
     .proProjects__container {
@@ -92,4 +94,13 @@
         padding: 100px 0 0 0;
     }
     
+}
+@media (min-width: 767px) and (max-width:991px) {
+    .proProjects__button {
+        justify-content: flex-end;
+    }
+    .proProjects__tabContent {
+        margin-left: 65px;
+        justify-content: center;
+    }
 }

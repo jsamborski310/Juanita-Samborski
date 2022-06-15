@@ -16,7 +16,7 @@
         "shortTitle": "Evictions",
         "role": "UX/UI | Development | Project Management",
         "number": "02",
-        "image": "/images/FileEvictions.png",
+        "image": "/images/FileEvictions-Welcome.png",
         "description": "Lorne ipsum",
         "skills": ["Website Design", "WordPress Development", "Software UX/UI", "Project Management"],
         "slug": "file-evictions"
@@ -57,7 +57,7 @@
     {
         "id": 6,
         "title": "Society of Advanced Bronchoscopy",
-        "shortTitle": "Bronch",
+        "shortTitle": "Bronchoscopy",
         "role": "Design | Development",
         "number": "06",
         "image": "/images/SAB-Login-LAB.jpg",

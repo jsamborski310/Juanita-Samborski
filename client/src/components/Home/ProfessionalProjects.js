@@ -37,7 +37,7 @@ export default function ProfessionalProjects() {
           </Col>
 
           <Col xs={12} sm={12} md={12} lg={6}>
-            <Tab.Content>
+            <Tab.Content className="proProjects__tabContent">
               {proProjectList.map(
                 ({ id, title, shortTitle, number, image, slug }) => (
 
@@ -68,7 +68,7 @@ export default function ProfessionalProjects() {
               )}
             </Tab.Content>
 
-            <div className="primary-button__container">
+            <div className="primary-button__container proProjects__button">
               <hr className="primary-button__line" />
               <a href="/projects">
                 <button className="primary-button">Case Studies</button>
