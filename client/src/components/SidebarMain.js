@@ -38,7 +38,7 @@ export default function SidebarMain() {
 
       {/* Logo */}
         <div>
-          <a href="/" rel='noreferrer' target="_blank">
+          <a href="/" rel='noreferrer'>
             <img
               src={process.env.PUBLIC_URL + "/images/Logo.png"}
               alt="Juanita Samborski Logo."
@@ -109,7 +109,7 @@ export default function SidebarMain() {
           />  
         </a>
 
-        <a href="mailto:juanita@48fourteen.com">
+        <a href="mailto:juanita.samborski@gmail.com">
           <img
             src={process.env.PUBLIC_URL + "/icons/email-white-2x.png"}
             alt="Email Icon."

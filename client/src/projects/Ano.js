@@ -67,7 +67,7 @@ export default function Ano() {
       {/* PROJECT OVERVIEW */}
       <div className="project__details-container">
         <div className="row g-5 pb-5">
-          <div className="col-5">
+          <div className="col-12 col-sm-12 col-md-5 col-lg-5">
             <div className="project__details-section">
               <h4>Client</h4>
               <p>Ano Delivery</p>
@@ -82,7 +82,7 @@ export default function Ano() {
             </div>
           </div>
 
-          <div className="col-7">
+          <div className="col-12 col-sm-12 col-md-7 col-lg-7">
             <p>
               In small-town Ellensburg, Washington, food delivery options were
               limited. Two college friends endeavored to fill that gap. They put
@@ -107,11 +107,11 @@ export default function Ano() {
 
         {/* CONTRIBUTIONS */}
         <div className="row d-flex justify-content-end mt-5 mb-5">
-          <div className="col-9">
+          <div className="col-12 col-sm-12 col-md-9 col-lg-9">
             <h4>Contributions</h4>
 
             <div className="row g-5 ps-5 pt-5">
-              <div className="col-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <p>Website Redesign</p>
                 <hr />
                 <p>Wireframing</p>
@@ -119,7 +119,7 @@ export default function Ano() {
                 <p>UI Design</p>
                 <hr />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <p>Front-End Development</p>
                 <hr />
                 <p>HTML</p>
@@ -133,7 +133,7 @@ export default function Ano() {
 
         {/* THE SETUP */}
         <div className="row mt-5 pb-5 g-5 d-flex align-items-center">
-          <div className="col-7 pe-7">
+          <div className="col-12 col-sm-12 col-md-7 col-lg-7 pe-7">
             <h4 className="mb-5">The Set Up</h4>
             <p>
               Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -144,7 +144,7 @@ export default function Ano() {
               nulla pariatur.
             </p>
           </div>
-          <div className="col-5 project__tools-box">
+          <div className="col-12 col-sm-12 col-md-5 col-lg-5 project__tools-box">
             <h4 className="mb-5">Environment & Tools</h4>
             <ul className="project__tool-list">
               <li>C# programming language</li>
@@ -163,8 +163,8 @@ export default function Ano() {
         {/* ORIGINAL STRUCTURE */}
 
         <div className="row mt-5 mb-5 d-flex align-items-center">
-          <div className="col-3"></div>
-          <div className="col-6">
+          <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <h4 className="mb-5">Original Structure</h4>
             <p>
               Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -175,7 +175,7 @@ export default function Ano() {
               nulla pariatur.
             </p>
           </div>
-          <div className="col-3"></div>
+          <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
 
           <img
             src={

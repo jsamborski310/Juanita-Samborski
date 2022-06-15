@@ -10,9 +10,9 @@ export default function ProfessionalProjects() {
         defaultActiveKey="1"
         className="proProjects__tab-container"
       >
-        <Row className="proProjects__inner-container">
+        <Row className="proProjects__inner-container w-100">
           <Col xs={12} sm={12} md={12} lg={6}>
-            <Nav 
+            <Nav className="justify-content-center"
                 // className="flex-column"
             >
               <Nav.Item className="proProjects__nav-item">
@@ -40,10 +40,10 @@ export default function ProfessionalProjects() {
             <Tab.Content>
               {proProjectList.map(
                 ({ id, title, shortTitle, number, image, slug }) => (
+
                   <Tab.Pane key={id} eventKey={id}>
 
-
-
+                  <a href={/project/ + slug}>
                     <div className="proProjects__project-container">
                       <div className="proProjects__triangle"></div>
                       <img
@@ -52,7 +52,8 @@ export default function ProfessionalProjects() {
                         alt={title + "project preview"}
                       />
 
-                      <div className="d-flex align-items-center justify-content-between proProjects__img-title">
+                      <div className="d-flex align-items-center proProjects__img-title
+                      ">
                         <div className="proProjects__number">
                           <h1>{number}</h1>
                         </div>
@@ -60,7 +61,7 @@ export default function ProfessionalProjects() {
                       </div>
                     </div>
 
-
+                  </a>
 
                   </Tab.Pane>
                 )
@@ -69,7 +70,7 @@ export default function ProfessionalProjects() {
 
             <div className="primary-button__container">
               <hr className="primary-button__line" />
-              <a href="/projects" target="_blank">
+              <a href="/projects">
                 <button className="primary-button">Case Studies</button>
               </a>
             </div>
