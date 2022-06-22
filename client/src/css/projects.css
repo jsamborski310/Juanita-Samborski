@@ -144,6 +144,13 @@
     font-weight: 700;
 }
 
+/* CONTACT */
+/* .projects__contact-container {
+    width: calc(100% - 20vw);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 20px 60px;
+} */
 /* MEDIA QUERIES */
 @media (max-width: 991px) {
     .projects__title h1 {

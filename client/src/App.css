@@ -13,6 +13,7 @@
 @import './css/project.css';
 @import './css/carousel.css';
 @import './css/contactMain.css';
+@import './css/footerMain.css';
 
 *, *::before, *::after {
   box-sizing: border-box;

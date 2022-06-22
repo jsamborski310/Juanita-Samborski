@@ -1,6 +1,32 @@
-import React from 'react'
+import { useState } from 'react'
+import { Form, Button } from "react-bootstrap";
+
 
 export default function Contact() {
+
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    // let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+
   return (
     <section id="contact" className="contact__container anchor">
 
@@ -22,7 +48,63 @@ export default function Contact() {
         />
 
         {/* Contact Section */}
-        <div className='row contact__statement'>
+
+        <section className="contactHome__container d-flex align-items-center">
+      <div className="row g-5">
+        <div className="col-sm-12 col-md-12 col-lg-6">
+          <h3>Contact</h3>
+          <h2>Let's create something together...</h2>
+        </div>
+        <div className="col-sm-12 col-md-12 col-lg-6">
+          {/* FORM  */}
+          <div className="form-container">
+            <Form 
+                className="signup-form" 
+                onSubmit={handleSubmit}
+            >
+              <Form.Group>
+                <Form.Control
+                  className="name-input"
+                  type="text"
+                  id="name"
+                  placeholder="name"
+                  name="name"
+                  required
+                ></Form.Control>
+                <Form.Control
+                  className="email-input"
+                  type="text"
+                  id="email"
+                  placeholder="email"
+                  name="email"
+                  required
+                ></Form.Control>
+                <Form.Control
+                  className="textarea-input"
+                  as="textarea"
+                  placeholder="tell me about your project"
+                  id="message"
+                  name="message"
+                  rows="3"
+                  required
+                ></Form.Control>                
+                <div className="primary-button__container contactHome">
+                  <hr className="primary-button__line contactHome" />
+                  <Button className="contactHome__form-button" value="submit" type="submit">
+                    <div className="primary-button contactHome ">{status}</div>
+                  </Button>
+                </div>
+              </Form.Group>
+            </Form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+        {/* <div className='row contact__statement'>
             <div className='col-10 col-sm-10 col-md-5 col-lg-5'>
                 <h2>
                     Let's create something together...
@@ -39,7 +121,7 @@ export default function Contact() {
                     <p>juanita(at)48fourteen(dot)com</p>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         {/* Footer */}
         <div className='row'>

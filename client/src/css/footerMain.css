@@ -1,0 +1,29 @@
+.footer__main-footer {
+    background-color: #ffffff;
+    /* position: absolute;
+    bottom:0; */
+    width: 90%;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.footer__main-footer p {
+    color: #000000;
+    margin-bottom: 0;
+}
+.footer__main-footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width:767px) {
+    .footer__main-footer {
+        flex-direction: column;
+        align-items: end;
+    }
+    .footer__main-footer p {
+        margin-bottom: 10px;
+    }
+}

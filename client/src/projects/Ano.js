@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Carousel from "../components/Project/Carousel";
 import ContactMain from "../components/ContactMain";
 import proProjectList from "../data/proProjectsList.json";
+import Footer from "../components/FooterMain"
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -107,11 +108,11 @@ export default function Ano() {
 
         {/* CONTRIBUTIONS */}
         <div className="row d-flex justify-content-end mt-5 mb-5">
-          <div className="col-12 col-sm-12 col-md-9 col-lg-9">
-            <h4>Contributions</h4>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-9">
+            <h4 className="mb-5">Contributions</h4>
 
-            <div className="row g-5 ps-5 pt-5">
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div className="row g-5 pt-5">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 project__contributions-item">
                 <p>Website Redesign</p>
                 <hr />
                 <p>Wireframing</p>
@@ -119,7 +120,7 @@ export default function Ano() {
                 <p>UI Design</p>
                 <hr />
               </div>
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 project__contributions-item">
                 <p>Front-End Development</p>
                 <hr />
                 <p>HTML</p>
@@ -187,43 +188,50 @@ export default function Ano() {
         </div>
 
         {/* STYLE GUIDE */}
-        <div className="pt-5 pb-5 project__style-guide-box">
-          <div className="project__style-guide-box-desc">
+        <div className="pt-5 pb-5 mb-5 project__style-guide-box">
+          <div id="desc">
             <h4 className="mb-5">Style Guide</h4>
             <p>
               Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="project__style-guide-blank"></div>
+          <div id="blank"></div>
 
-          <div className="mt-5 project__style-guide-typo">
+          <div id="typo" className="mt-5">
             <h3 className="mb-5">Typeface</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-typeface.png"}
               width="50%"
               alt="Screenshots of typeface."
             />
+            </div>
+
+            <div id="typoHeading">
             <h3 className="mb-5 mt-5">Styles</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-styles.png"}
-              width="80%"
+              // width="70%"
               alt="Screenshots of font styles."
             />
           </div>
-          <div className="project__style-guide-comp">
+          <div id="comp">
             <h3 className="mb-5">Colors</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-colors.png"}
               width="100%"
               alt="Screenshots of colors. Yellow, black, gray, and white."
             />
+            </div>
+
+            <div id="button">
             <h3 className="mb-5 mt-5">Buttons</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-buttons.png"}
-              width="100%"
+              width="70%"
               alt="Screenshots of buttons."
             />
+
           </div>
         </div>
       </div>
@@ -274,9 +282,15 @@ export default function Ano() {
       </div>
 
       {/* DESIGN DETAILS */}
-      <div className="project__details-container row align-content-center pt-5 pb-5">
-        <div className="col-6"></div>
-        <div className="col-6">
+      <div className="project__details-container row align-content-center pt-5 pb-5 ">
+        <div className="
+          col-sm-12 col-md-6 col-lg-6
+          order-sm-2 order-md-1 order-lg-1
+        "></div>
+        <div className="
+          col-sm-12 col-md-6 col-lg-6
+          order-sm-1 order-md-2 order-lg-2
+        ">
           <h4>Loren Ipsum</h4>
           <p>
             Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -291,14 +305,14 @@ export default function Ano() {
 
       {/* ADDITIONAL PROJECT IMAGES */}
       <div className="project__details-container row align-content-center">
-        <div className="col-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
             className="img-fluid w-100 mb-5 project__images"
             alt="Ano Delivery home page."
           />
         </div>
-        <div className="col-6 d-flex align-items-center">
+        <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
             className="img-fluid w-100 mb-5"
@@ -335,13 +349,9 @@ export default function Ano() {
         ))}      
          
         </Carousel>
-     
-
-      {/* CONTACT FORM */}
-
-      <ContactMain/>
-      
+    
       </div>
+
 
       {/* END */}
     </div>

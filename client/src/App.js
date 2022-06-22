@@ -4,8 +4,11 @@ import Home from "./pages/Home";
 import Project from "./pages/Projects";
 import Sidebar from "./components/SidebarMain";
 import Ano from "./projects/Ano";
+import ContactMain from "./components/ContactMain";
 
 import "./App.css";
+import FooterMain from "./components/FooterMain";
+// import SidebarMain from "./components/SidebarMain";
 
 function App() {
  
@@ -14,12 +17,15 @@ function App() {
   return (
     <div>
       {location.pathname === "/" ? null : <Sidebar />}
+      {/* {location.pathname === "/" ? <SidebarMain /> : null} */}
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/project/ano-delivery" element={<Ano />} />
       </Routes>
+      {location.pathname === "/" ? null : <ContactMain/>}
+      {location.pathname === "/" ? null : <FooterMain />}
     </div>
   );
 }

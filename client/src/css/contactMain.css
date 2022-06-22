@@ -1,5 +1,12 @@
 .contactMain__container {
     height: 100vh;
+    width: calc(100% - 20vw);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* width: calc(100%-120px);
+    margin-left:65px;
+    margin-right: -65px; */
+    padding: 0 60px 80px 60px;
 }
 .contactMain__container * {
     color: #000000;
@@ -47,3 +54,40 @@
     margin-top: 80px;
 }
 
+.contactMain > .btn-primary:active {
+    background-color: transparent;
+    border: transparent;
+}
+.contactMain > .btn-primary:focus {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+}
+
+@media (min-width: 768px) and (max-width:1199px) {
+    .contactMain__container {
+        width: calc(100% - 15vw);
+        margin-left: 8vh;
+        margin-right: 8vh;
+        padding: 0 0 80px 60px;
+    }
+}
+@media (max-width: 991px) {
+    .contactMain.primary-button__line {
+        display:none;
+    }
+    .contactMain.primary-button {
+        margin-left: 75px;
+    }
+}
+@media (max-width: 767px) {
+    .contactMain.primary-button {
+        margin-left: 75px;
+    }
+    .contactMain__container {
+        width: 100%;
+        margin-left:0;
+        margin-right:0;
+        padding-bottom: 80px;
+    }
+}

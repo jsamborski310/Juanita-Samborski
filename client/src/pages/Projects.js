@@ -1,8 +1,10 @@
 import React from "react";
+import ContactMain from "../components/ContactMain";
 import proProjectList from "../data/proProjectsList.json";
 
 export default function Projects() {
   return (
+    <>
     <div className="projects__container">
       <div className="projects__header-container">
         {/* HEADER SECTION */}
@@ -90,6 +92,8 @@ export default function Projects() {
           </div>
         )
       )}
+
     </div>
+    </>
   );
 }

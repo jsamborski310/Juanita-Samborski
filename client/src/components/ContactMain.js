@@ -33,11 +33,11 @@ const [status, setStatus] = useState("Submit");
   return (
     <section className="contactMain__container d-flex align-items-center">
       <div className="row g-5">
-        <div className="col-6">
+        <div className="col-sm-12 col-md-12 col-lg-6">
           <h3>Contact</h3>
           <h2>Let's create something together...</h2>
         </div>
-        <div className="col-6">
+        <div className="col-sm-12 col-md-12 col-lg-6">
           {/* FORM  */}
           <div className="form-container">
             <Form 
