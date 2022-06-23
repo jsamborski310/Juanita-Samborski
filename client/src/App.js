@@ -8,7 +8,6 @@ import ContactMain from "./components/ContactMain";
 
 import "./App.css";
 import FooterMain from "./components/FooterMain";
-// import SidebarMain from "./components/SidebarMain";
 
 function App() {
  
@@ -17,7 +16,6 @@ function App() {
   return (
     <div>
       {location.pathname === "/" ? null : <Sidebar />}
-      {/* {location.pathname === "/" ? <SidebarMain /> : null} */}
 
       <Routes>
         <Route path="/" element={<Home />} />

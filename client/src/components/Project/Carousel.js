@@ -1,62 +1,58 @@
-import React, { useEffect, useState } from 'react'
-import '../../css/carousel.css';
-
-// import proProjectList from "../../data/proProjectsList.json";
-
-export default function Carousel( props ) {
-
-    const { children, show } = props;
-
-    const [ currentIndex, setCurrentIndex ] = useState(0);
-
-    const [ length, setLength ] = useState(children.length);
-
-    const [ touchPosition, setTouchPosition ] = useState(null);
+import React, { useEffect, useState } from "react";
+import "../../css/carousel.css";
 
 
-    useEffect(() => {
-        setLength(children.length)
-    }, [children]);
+export default function Carousel(props) {
+  const { children, show } = props;
 
-    const next = () => {
-        if (currentIndex < (length - show)) {
-            setCurrentIndex(prevState => prevState + 1)
-        }
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [length, setLength] = useState(children.length);
+
+  const [touchPosition, setTouchPosition] = useState(null);
+
+  useEffect(() => {
+    setLength(children.length);
+  }, [children]);
+
+  const next = () => {
+    if (currentIndex < length - show) {
+      setCurrentIndex((prevState) => prevState + 1);
     }
-    const prev = () => {
-    if (currentIndex > 0 ) {
-        setCurrentIndex(prevState => prevState - 1) 
+  };
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevState) => prevState - 1);
     }
-}
-    const handleTouchStart = (e) => {
-      const touchDown = e.touches[0].clientX;
-      setTouchPosition(touchDown)
-    }
-    const handleTouchMove = (e) => {
-        const touchDown = touchPosition;
+  };
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition;
 
-        if(touchDown === null ) {
-            return
-        }
-
-        const currentTouch = e.touches[0].clientX;
-        const diff = touchDown - currentTouch;
-
-        if (diff > 5 ) {
-            next()
-        }
-        if (diff < -5) {
-            prev()
-        }
-        setTouchPosition(null)
+    if (touchDown === null) {
+      return;
     }
 
-    //-----------------------
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+
+    if (diff > 5) {
+      next();
+    }
+    if (diff < -5) {
+      prev();
+    }
+    setTouchPosition(null);
+  };
+
+  // ----------------------
 
   return (
     <section>
-    
-    {/* HEADER  */}
+      {/* HEADER  */}
       <div className="project__details-container project__more-projects">
         <div className="project__more-projects-heading d-grid">
           <h6>Projects</h6>
@@ -72,44 +68,38 @@ export default function Carousel( props ) {
           </div>
         </div>
       </div>
-      
+
       {/* CAROUSEL */}
 
-      <div className='carousel-container'>
-        <div className='carousel-wrapper'>
-          {
-            currentIndex > 0 &&
+      <div className="carousel-container">
+        <div className="carousel-wrapper">
+          {currentIndex > 0 && (
             <button onClick={prev} className="left-arrow">
               &lt;
             </button>
-          }
-          <div 
-            className='carousel-content-wrapper'
+          )}
+          <div
+            className="carousel-content-wrapper"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
           >
-
-          
-          <div 
-            className={`carousel-content show-${show}`}
-            style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
-          >
-            {children}
+            <div
+              className={`carousel-content show-${show}`}
+              style={{
+                transform: `translateX(-${currentIndex * (100 / show)}%)`,
+              }}
+            >
+              {children}
+            </div>
           </div>
-          
-        </div>
 
-        {
-          currentIndex < (length - show) &&
+          {currentIndex < length - show && (
             <button onClick={next} className="right-arrow">
               &gt;
             </button>
-        }
+          )}
+        </div>
       </div>
-      </div>
-
-
-
     </section>
-  )
+  );
 }

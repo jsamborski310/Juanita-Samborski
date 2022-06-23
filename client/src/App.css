@@ -1,24 +1,26 @@
 @import-normalize;
-@import './css/about.css';
-@import './css/contact.css';
-@import './css/font.css';
-@import './css/header.css';
-@import './css/personalProjects.css';
-@import './css/toolkit.css';
-@import './css/accordion.css';
-@import './css/sidebar.css';
-@import './css/proProjects.css';
-@import './css/sidebarMain.css';
-@import './css/projects.css';
-@import './css/project.css';
-@import './css/carousel.css';
-@import './css/contactMain.css';
-@import './css/footerMain.css';
+@import "./css/about.css";
+@import "./css/contact.css";
+@import "./css/font.css";
+@import "./css/header.css";
+@import "./css/personalProjects.css";
+@import "./css/toolkit.css";
+@import "./css/accordion.css";
+@import "./css/sidebar.css";
+@import "./css/proProjects.css";
+@import "./css/sidebarMain.css";
+@import "./css/projects.css";
+@import "./css/project.css";
+@import "./css/carousel.css";
+@import "./css/contactMain.css";
+@import "./css/footerMain.css";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --light: #dfdfdf;
@@ -33,28 +35,20 @@ a {
   text-decoration: none;
 }
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
-  /* color: #dfdfdf; */
-  font-weight:300;
-  line-height:1.7em;
-  /* --switch: calc((var(--light) - var(--threshold)) * -100%);
-  color: hsl(0, 0%, var(--switch)); */
-  /* filter: invert(1); */
-  /* filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(0); */
-  /* filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(1);
-  -webkit-filter: saturate(0) grayscale(1) brightness(.7) contrast(1000%) invert(1); */
+  font-weight: 300;
+  line-height: 1.7em;
 }
 h1 {
-  /* color:#ffffff; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 8rem;
   text-transform: lowercase;
 }
 h2 {
-  color:#ffffff;
-  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 4rem;
   text-transform: lowercase;
@@ -62,8 +56,7 @@ h2 {
 
 /* Button, subtitle font. */
 h3 {
-  /* color:#ffffff; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-transform: lowercase;
@@ -71,16 +64,14 @@ h3 {
 }
 /* Project Titles */
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: capitalize;
-  /* color: #dfdfdf; */
 }
 /* Faded section title */
 h6 {
-  /* color:#ffffff22; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 11rem;
   text-transform: lowercase;
@@ -99,8 +90,8 @@ h6 {
 /*  PRIMARY BUTTON */
 
 .primary-button__container {
-  display:flex;
-  gap:20px;
+  display: flex;
+  gap: 20px;
   align-items: center;
   cursor: pointer;
 }
@@ -115,18 +106,18 @@ h6 {
 .primary-button {
   background-color: transparent;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
   text-transform: lowercase;
   letter-spacing: 0.2em;
-  border-radius:0;
+  border-radius: 0;
   border: 1px solid #ffffff;
   padding: 10px 15px;
-  min-width:180px;
+  min-width: 180px;
   text-align: left;
   z-index: 40;
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 .primary-button:hover {
   background-color: #f8f9fa50;
@@ -136,8 +127,8 @@ h6 {
 /* BORDERLESS BUTTON */
 
 .borderless-button__container {
-  display:flex;
-  gap:20px;
+  display: flex;
+  gap: 20px;
   align-items: center;
 }
 
@@ -151,17 +142,17 @@ h6 {
 .borderless-button {
   background-color: transparent;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
   text-transform: lowercase;
   letter-spacing: 0.2em;
   text-align: left;
   border: none;
-  min-width:140px;
+  min-width: 140px;
 }
 
-/* MEDIA QUERIES */ 
+/* MEDIA QUERIES */
 
 @media (max-width: 968px) {
   h6 {
@@ -179,6 +170,6 @@ h6 {
     font-size: 5rem;
   }
   .borderless-button__container {
-    display:none;
+    display: none;
   }
 }

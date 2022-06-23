@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import Carousel from "../components/Project/Carousel";
-import ContactMain from "../components/ContactMain";
 import proProjectList from "../data/proProjectsList.json";
-import Footer from "../components/FooterMain"
+import useMediaQuery from "../hooks/useMediaQuery";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Ano() {
+
+  // FOR LAYING DOWN THE UI
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("#layoutImages", {
@@ -42,7 +43,10 @@ export default function Ano() {
     });
   }, []);
 
-  // -----------------------------------
+// FOR CAROUSEL
+const isMobile = useMediaQuery('(min-width:767px)');
+
+  // ----------------------------------
 
   return (
     <div>
@@ -205,9 +209,9 @@ export default function Ano() {
               width="50%"
               alt="Screenshots of typeface."
             />
-            </div>
+          </div>
 
-            <div id="typoHeading">
+          <div id="typoHeading">
             <h3 className="mb-5 mt-5">Styles</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-styles.png"}
@@ -222,16 +226,15 @@ export default function Ano() {
               width="100%"
               alt="Screenshots of colors. Yellow, black, gray, and white."
             />
-            </div>
+          </div>
 
-            <div id="button">
+          <div id="button">
             <h3 className="mb-5 mt-5">Buttons</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-buttons.png"}
               width="70%"
               alt="Screenshots of buttons."
             />
-
           </div>
         </div>
       </div>
@@ -283,14 +286,18 @@ export default function Ano() {
 
       {/* DESIGN DETAILS */}
       <div className="project__details-container row align-content-center pt-5 pb-5 ">
-        <div className="
+        <div
+          className="
           col-sm-12 col-md-6 col-lg-6
           order-sm-2 order-md-1 order-lg-1
-        "></div>
-        <div className="
+        "
+        ></div>
+        <div
+          className="
           col-sm-12 col-md-6 col-lg-6
           order-sm-1 order-md-2 order-lg-2
-        ">
+        "
+        >
           <h4>Loren Ipsum</h4>
           <p>
             Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -321,37 +328,60 @@ export default function Ano() {
         </div>
       </div>
 
-      {/* MORE PROJECTS */}
+      {/* MORE PROJECTS CAROUSEL */}
 
       <div className="project__details-container project__carousel">
-        <Carousel show={2}>
 
-        {proProjectList.map(
-          ({ id, image, title, number, role }) => (
+         {isMobile ? (
 
-            <div className="project__more-container">
-            <div key={id} style={{ padding: '50px' }}>
-              <img
-                src={process.env.PUBLIC_URL + image}
-                alt={title}
-                className="project__more-images"
-              />
-                <div className="d-flex align-items-center">
-                  <p className="project__more-number pe-4">{number}</p>
-                  <div>
-                    <h4>{title}</h4>
-                    <p>{role}</p>
+          <Carousel show={2}>
+            {proProjectList.map(({ id, image, title, number, role }) => (
+              <div className="project__more-container">
+                <div key={id} style={{ padding: "50px" }}>
+                  <img
+                    src={process.env.PUBLIC_URL + image}
+                    alt={title}
+                    className="project__more-images"
+                  />
+                  <div className="d-flex align-items-center">
+                    <p className="project__more-number pe-4">{number}</p>
+                    <div>
+                      <h4>{title}</h4>
+                      <p>{role}</p>
+                    </div>
                   </div>
                 </div>
-            </div>
-          </div>
+              </div>
+            ))}
+          </Carousel>
 
-        ))}      
-         
-        </Carousel>
-    
+        ) : (
+          <Carousel show={1}>
+            {proProjectList.map(({ id, image, title, number, role }) => (
+              <div className="project__more-container">
+                <div key={id} style={{ padding: "50px" }}>
+                  <img
+                    src={process.env.PUBLIC_URL + image}
+                    alt={title}
+                    className="project__more-images"
+                  />
+                  <div className="d-flex align-items-center">
+                    <p className="project__more-number pe-4">{number}</p>
+                    <div>
+                      <h4>{title}</h4>
+                      <p>{role}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+         )
+         } 
+
+
+
       </div>
-
 
       {/* END */}
     </div>

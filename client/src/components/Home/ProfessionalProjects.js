@@ -12,9 +12,7 @@ export default function ProfessionalProjects() {
       >
         <Row className="proProjects__inner-container w-100">
           <Col xs={12} sm={12} md={12} lg={6}>
-            <Nav className="justify-content-center"
-                // className="flex-column"
-            >
+            <Nav className="justify-content-center">
               <Nav.Item className="proProjects__nav-item">
                 {/* TAB */}
                 {proProjectList.map(({ id, title, role, number }) => (
@@ -40,29 +38,27 @@ export default function ProfessionalProjects() {
             <Tab.Content className="proProjects__tabContent">
               {proProjectList.map(
                 ({ id, title, shortTitle, number, image, slug }) => (
-
                   <Tab.Pane key={id} eventKey={id}>
+                    <a href={/project/ + slug}>
+                      <div className="proProjects__project-container">
+                        <div className="proProjects__triangle"></div>
+                        <img
+                          className="proProjects__image"
+                          src={process.env.PUBLIC_URL + image}
+                          alt={title + "project preview"}
+                        />
 
-                  <a href={/project/ + slug}>
-                    <div className="proProjects__project-container">
-                      <div className="proProjects__triangle"></div>
-                      <img
-                        className="proProjects__image"
-                        src={process.env.PUBLIC_URL + image}
-                        alt={title + "project preview"}
-                      />
-
-                      <div className="d-flex align-items-center proProjects__img-title
-                      ">
-                        <div className="proProjects__number">
-                          <h1>{number}</h1>
+                        <div
+                          className="d-flex align-items-center proProjects__img-title
+                      "
+                        >
+                          <div className="proProjects__number">
+                            <h1>{number}</h1>
+                          </div>
+                          <h2>{shortTitle}</h2>
                         </div>
-                        <h2>{shortTitle}</h2>
                       </div>
-                    </div>
-
-                  </a>
-
+                    </a>
                   </Tab.Pane>
                 )
               )}

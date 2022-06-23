@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
 export default function ContactMain() {
+  // Contact Form
 
-// Contact Form
-
-const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -15,7 +14,7 @@ const [status, setStatus] = useState("Submit");
       email: email.value,
       message: message.value,
     };
-    // let response = await fetch("http://localhost:5000/contact", {
+
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -28,8 +27,7 @@ const [status, setStatus] = useState("Submit");
     alert(result.status);
   };
 
-
-// ---------------------
+  // ---------------------
   return (
     <section className="contactMain__container d-flex align-items-center">
       <div className="row g-5">
@@ -40,10 +38,7 @@ const [status, setStatus] = useState("Submit");
         <div className="col-sm-12 col-md-12 col-lg-6">
           {/* FORM  */}
           <div className="form-container">
-            <Form 
-                className="signup-form" 
-                onSubmit={handleSubmit}
-            >
+            <Form className="signup-form" onSubmit={handleSubmit}>
               <Form.Group>
                 <Form.Control
                   className="name-input"
@@ -69,10 +64,14 @@ const [status, setStatus] = useState("Submit");
                   name="message"
                   rows="3"
                   required
-                ></Form.Control>                
+                ></Form.Control>
                 <div className="primary-button__container contactMain">
                   <hr className="primary-button__line contactMain" />
-                  <Button className="contactMain__form-button" value="submit" type="submit">
+                  <Button
+                    className="contactMain__form-button"
+                    value="submit"
+                    type="submit"
+                  >
                     <div className="primary-button contactMain ">{status}</div>
                   </Button>
                 </div>

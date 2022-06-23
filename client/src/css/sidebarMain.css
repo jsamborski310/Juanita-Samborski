@@ -3,10 +3,6 @@
 }
 
 .sidebarMain__triangle-container {
-    /* width: 0;
-    height: 0; */
-    /* border-top: 180px solid #000000;
-    border-left: 180px solid transparent; */
     display:flex;
     justify-content: flex-end; 
 }
@@ -17,10 +13,6 @@
     border-top: 180px solid #000000;
     border-left: 180px solid transparent;
     z-index: 20;
-    /* position: absolute;
-    right: 0; */
-    /* display:flex;
-    justify-content: flex-end; */
   }
 
 .sidebarMain__menu-icon-top-right:hover {
