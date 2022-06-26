@@ -7,44 +7,64 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Ano() {
-
   // FOR LAYING DOWN THE UI
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    // ScrollTrigger.saveStyles(".desktop");
+    ScrollTrigger.matchMedia({
+      "(min-width: 768px)": function() {
+
+ 
+
+
     gsap.to("#layoutImages", {
       scrollTrigger: {
         trigger: "#layoutImages",
         start: "top top",
         // end: "+=100%",
         // pinSpacing: "true",
+        pin: ".project__inner-layout-container",
         end: "bottom bottom",
-        pin: ".project__black-background",
+        // pin: ".project__black-background",
+       
         scrub: true,
         nullTargetWarn: false,
         // markers: "true",
       },
     });
-  }, []);
+  }
+}
+)}, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    // ScrollTrigger.saveStyles(".desktop");
+    ScrollTrigger.matchMedia({
+      "(min-width: 768px)": function() {
+
+
     gsap.to("#layoutImages", {
       scrollTrigger: {
         trigger: "#layoutImages",
         start: "top top",
         // end: "+=100%",
         // pinSpacing: "true",
-        end: "bottom bottom",
         pin: "#layoutContent",
+        end: "bottom bottom",
+       
         scrub: true,
         nullTargetWarn: false,
         // markers: "true",
       },
-    });
-  }, []);
+    })  ;
+  }
+}
+  )}, []);
 
-// FOR CAROUSEL
-const isMobile = useMediaQuery('(min-width:767px)');
+  // FOR CAROUSEL (See Hooks)
+  const isMobile = useMediaQuery("(min-width:991px)");
 
   // ----------------------------------
 
@@ -83,7 +103,11 @@ const isMobile = useMediaQuery('(min-width:767px)');
             </div>
             <div className="project__details-section">
               <h4>Website</h4>
-              <p>In progress</p>
+              <p>order.anodelivery.com</p>
+            </div>
+            <div className="project__details-section">
+              <h4>Completed</h4>
+              <p>In Progress</p>
             </div>
           </div>
 
@@ -99,19 +123,26 @@ const isMobile = useMediaQuery('(min-width:767px)');
             <p>
               After several years of success, Ano Delivery was ready to expand.
               They reached out to a talented backend developer to build out a
-              platform that would streamline orders, and make it easy for
-              customers, restaurants, and drivers.
+              platform that would streamline their process, to make it easy for
+              customers to place their order, restaurants to receive the order,
+              and drivers to deliver the order.
             </p>
             <p>
-              That backend developer, in turn, reached out to me to design &
-              implement the application so that it was visually appealing and
-              usable.
+              That backend developer, in turn, reached out to me to create a
+              design that was simple, cohesive, and user-friendly, and to
+              implement it on the front-end.
             </p>
           </div>
         </div>
 
         {/* CONTRIBUTIONS */}
-        <div className="row d-flex justify-content-end mt-5 mb-5">
+        <div className="row d-flex justify-content-end mt-5 mb-5 project__contribution-container">
+          <img
+            src={process.env.PUBLIC_URL + "/images/abstract-plus-grid-2.png"}
+            alt="Grid of plus symbol."
+            className="project__contribution-image"
+          />
+
           <div className="col-12 col-sm-12 col-md-12 col-lg-9">
             <h4 className="mb-5">Contributions</h4>
 
@@ -141,19 +172,38 @@ const isMobile = useMediaQuery('(min-width:767px)');
           <div className="col-12 col-sm-12 col-md-7 col-lg-7 pe-7">
             <h4 className="mb-5">The Set Up</h4>
             <p>
-              Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              The environment was established by the backend developer. With
+              many years of experience in the field, he worked with a language
+              and a framework that would support the needs of the project and
+              ensure stability.
+            </p>
+            <p>
+              Before implementing the design created in Adobe XD on the
+              front-end, I updated an outdated version of Bootstrap, cleaned up
+              and restructured the existing HTML and CSS.
             </p>
           </div>
           <div className="col-12 col-sm-12 col-md-5 col-lg-5 project__tools-box">
+            <img
+              src={
+                process.env.PUBLIC_URL + "/images/abstract-diagonal-square.png"
+              }
+              alt="Grid of diagonal lines in square."
+              className="project__tools-image-background"
+            />
+
+            <img
+              src={
+                process.env.PUBLIC_URL + "/images/abstract-squares-corner.png"
+              }
+              alt="Grid of plus symbol."
+              className="project__tools-image"
+            />
+
             <h4 className="mb-5">Environment & Tools</h4>
             <ul className="project__tool-list">
-              <li>C# programming language</li>
-              <li>ASP.NET framework</li>
+              <li>C#</li>
+              <li>ASP.NET</li>
               <li>Javascript</li>
               <li>HTML</li>
               <li>CSS</li>
@@ -167,17 +217,20 @@ const isMobile = useMediaQuery('(min-width:767px)');
 
         {/* ORIGINAL STRUCTURE */}
 
-        <div className="row mt-5 mb-5 d-flex align-items-center">
+        <div className="row mt-5 mb-5 d-flex align-items-center project__structure-container">
+          <img
+            src={process.env.PUBLIC_URL + "/images/abstract-four-arrows.png"}
+            alt="Grid of plus symbol."
+            className="project__structure-image"
+          />
+
           <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <h4 className="mb-5">Original Structure</h4>
             <p>
-              Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Although highly skilled in backend development, design and
+              front-end development were not in the developers' wheelhouse. So,
+              he structured the website with one goal in mind: make it work.
             </p>
           </div>
           <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
@@ -196,8 +249,8 @@ const isMobile = useMediaQuery('(min-width:767px)');
           <div id="desc">
             <h4 className="mb-5">Style Guide</h4>
             <p>
-              Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The color pallete was inspired by the company's logo. Typography
+              and font styles were selected for sinmplicity and readability.
             </p>
           </div>
           <div id="blank"></div>
@@ -242,45 +295,67 @@ const isMobile = useMediaQuery('(min-width:767px)');
       {/* LAYING DOWN THE DESIGN */}
 
       <div id="mainContainer" className="project__layout-container clearfix">
-        <div id="blackContainer" className="project__black-background"></div>
+        {/* <div
+          // id="blackContainer" className="project__black-background"
+          id="innerLayoutContainer"
+          className="project__inner-layout-container"
+        ></div> */}
 
         <div
           id="layoutContainer"
-          className="project__layout-container-inner clearfix"
+          className="project__layout-container-inner"
         >
+
+
+<div id="layoutContent" className="project__layout-desc">
+            <div id="description" className="project__layout-content-inner">
+              <div>
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/abstract-square-and-dots.png"
+                  }
+                  alt="Screenshots of original website structure."
+                  className="project__layout-description-image"
+                />
+
+                <h4 className="mb-5">Laying Down the UI</h4>
+                <p>
+                  Loren ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
           <div id="layoutImages" className="project__container-images">
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-home.png"}
-              className="img-fluid w-100 mb-5 project__images"
+              className="img-fluid mb-5 project__images"
               alt="Ano Delivery home page."
             />
             <img
               src={
                 process.env.PUBLIC_URL + "/images/ano-delivery-restaurant.png"
               }
-              className="img-fluid w-100 mb-5 project__images"
+              className="img-fluid mb-5 project__images"
               alt="Ano Delivery restaurant page."
             />
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-cart.png"}
-              className="img-fluid w-100 mb-5 project__images"
-              alt="Ano Delivery home page."
+              className="img-fluid mb-5 project__images"
+              alt="Ano Delivery cart page."
             />
           </div>
 
-          <div id="layoutContent" className="project__layout-desc">
-            <div id="description" className="project__layout-content-inner">
-              <h4 className="mb-5">Laying Down the UI</h4>
-              <p>
-                Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
-            </div>
-          </div>
+
+
+
         </div>
       </div>
 
@@ -311,29 +386,44 @@ const isMobile = useMediaQuery('(min-width:767px)');
       </div>
 
       {/* ADDITIONAL PROJECT IMAGES */}
-      <div className="project__details-container row align-content-center">
-        <div className="col-sm-12 col-md-6 col-lg-6">
+      <div className="project__details-container project__additional-container row align-content-center">
+
+
+
+        <div 
+          className="col-sm-12 col-md-6 col-lg-6" 
+          style={{zIndex: "10"}}>
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery home page."
+            alt="Ano Delivery active orders page."
           />
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+        <div 
+          className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center"
+          style={{zIndex: "10"}}
+          >
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
             className="img-fluid w-100 mb-5"
-            alt="Ano Delivery home page."
+            alt="Ano Delivery edit restaurant section."
           />
         </div>
+
+        <img
+          src={process.env.PUBLIC_URL + "/images/abstract-grid-dashed-lines.png"}
+          alt="Screenshots of original website structure."
+          className="project__additional-abstract-image"
+        />
+
+
       </div>
+
 
       {/* MORE PROJECTS CAROUSEL */}
 
       <div className="project__details-container project__carousel">
-
-         {isMobile ? (
-
+        {isMobile ? (
           <Carousel show={2}>
             {proProjectList.map(({ id, image, title, number, role }) => (
               <div className="project__more-container">
@@ -354,7 +444,6 @@ const isMobile = useMediaQuery('(min-width:767px)');
               </div>
             ))}
           </Carousel>
-
         ) : (
           <Carousel show={1}>
             {proProjectList.map(({ id, image, title, number, role }) => (
@@ -376,11 +465,7 @@ const isMobile = useMediaQuery('(min-width:767px)');
               </div>
             ))}
           </Carousel>
-         )
-         } 
-
-
-
+        )}
       </div>
 
       {/* END */}
