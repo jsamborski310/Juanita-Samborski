@@ -218,11 +218,13 @@ export default function Ano() {
         {/* ORIGINAL STRUCTURE */}
 
         <div className="row mt-5 mb-5 d-flex align-items-center project__structure-container">
-          <img
+
+          {/* Abstract Image */}
+          {/* <img
             src={process.env.PUBLIC_URL + "/images/abstract-four-arrows.png"}
             alt="Grid of plus symbol."
             className="project__structure-image"
-          />
+          /> */}
 
           <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -250,7 +252,7 @@ export default function Ano() {
             <h4 className="mb-5">Style Guide</h4>
             <p>
               The color pallete was inspired by the company's logo. Typography
-              and font styles were selected for sinmplicity and readability.
+              and font styles were selected for simplicity and readability.
             </p>
           </div>
           <div id="blank"></div>
