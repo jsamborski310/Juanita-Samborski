@@ -12,6 +12,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "overrides": {
+        "autoprefixer": "10.4.5"
+    },
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^16.0.1",
