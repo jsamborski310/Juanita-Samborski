@@ -1,5 +1,8 @@
 require("dotenv").config();
 
+// const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
+
 // Loads required dependencies
 const express = require("express");
 const router = express.Router();
@@ -16,7 +19,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+// app.listen(5000, () => console.log("Server Running"));
+app.listen(PORT, () => console.log("Server Running"));
 
 // const oAuth2Client = new OAuth2(
 //   process.env.CLIENT_ID,

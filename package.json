@@ -4,6 +4,7 @@
     "description": "",
     "scripts": {
         "start": "node index.js",
+        "postinstall": "npm run develop",
         "develop": "cd client && npm run start",
         "install": "cd client && npm i",
         "build": "cd client && npm run build"
