@@ -21,10 +21,14 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
-app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'build', 'index.html');
-  res.sendFile(index);
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
+
+// app.get('*', function (req, res) {
+//   const index = path.join(__dirname, 'build', 'index.html');
+//   res.sendFile(index);
+// });
 
 // app.listen(5000, () => console.log("Server Running"));
 app.listen(port, () => console.log("Server Running"));
