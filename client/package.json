@@ -15,13 +15,15 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
+    "serve": "^13.0.2",
     "web-vitals": "^2.1.4"
   },
   "overrides": {
     "autoprefixer": "10.4.5"
- },
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
