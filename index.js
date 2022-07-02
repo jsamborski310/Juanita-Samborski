@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/", router);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build'));
 });
 
 // app.listen(5000, () => console.log("Server Running"));
