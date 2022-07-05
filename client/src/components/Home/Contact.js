@@ -19,7 +19,6 @@ export default function Contact() {
       body: JSON.stringify(details),
       headers: {
         "Accept": 'application/json',
-        // "Content-Type": "application/json;charset=utf-8",
         "Content-Type": "application/json",
       },
     });
@@ -32,8 +31,8 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact__container anchor">
-      {/* Abstract Images */}
 
+      {/* Abstract Images */}
         <img
           src={process.env.PUBLIC_URL + "/images/abstract-gridLines.png"}
           alt="Abstract grid with vertical lines."
@@ -44,7 +43,6 @@ export default function Contact() {
      
 
       {/* Contact Section */}
-
       <section className="contactHome__container">
         <div className="row g-5">
           <div className="col-sm-12 col-md-12 col-lg-6">
