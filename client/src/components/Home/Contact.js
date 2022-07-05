@@ -6,6 +6,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
+
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
@@ -15,11 +16,15 @@ export default function Contact() {
 
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
       body: JSON.stringify(details),
+      headers: {
+        "Accept": 'application/json',
+        // "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
+      },
     });
+
+    
     setStatus("Submit");
     let result = await response.json();
     alert(result.status);
@@ -28,14 +33,15 @@ export default function Contact() {
   return (
     <section id="contact" className="contact__container anchor">
       {/* Abstract Images */}
-      <div className="contact__container-background">
+
         <img
           src={process.env.PUBLIC_URL + "/images/abstract-gridLines.png"}
           alt="Abstract grid with vertical lines."
           width="400px"
           height="auto"
+          className="contact__container-background-image"
         />
-      </div>
+     
 
       {/* Contact Section */}
 

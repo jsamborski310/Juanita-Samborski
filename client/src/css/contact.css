@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.contact__container-background-image {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  opacity: 70%;
+}
+
 .contactHome__container {
   height: 100vh;
   width: calc(100% - 20vw);
@@ -11,16 +18,11 @@
   padding: 0 60px 80px 60px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 20;
 }
 .contactHome__container * {
   color: var(--light);
-}
-
-.contact__container-background img {
-  position: absolute;
-  height: 100%;
-  width: 90%;
-  opacity: 70%;
 }
 
 .contact__image-squares {
@@ -112,7 +114,7 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 767px) {
-  .contact__container-background img {
+  .contact__container-background-image {
     width: 180%;
     height: 100vh;
   }

@@ -77,27 +77,32 @@ export default function Sidebar() {
               <nav>
                 <ul className="sidebar__menu-items-list">
                   <li onClick={handleClose}>
-                    <a href="#home">
+                    <a href="/#home">
                       <h2>Home</h2>
                     </a>
                   </li>
                   <li onClick={handleClose}>
-                    <a href="#about">
+                    <a href="/#about">
                       <h2>About</h2>
                     </a>
                   </li>
                   <li onClick={handleClose}>
-                    <a href="#toolkit">
+                    <a href="/#proProjects">
+                      <h2>Client Projects</h2>
+                    </a>
+                  </li>                  
+                  <li onClick={handleClose}>
+                    <a href="/#toolkit">
                       <h2>Toolkit</h2>
                     </a>
                   </li>
                   <li onClick={handleClose}>
-                    <a href="#personalProjects">
+                    <a href="/#personalProjects">
                       <h2>Personal Projects</h2>
                     </a>
                   </li>
                   <li onClick={handleClose}>
-                    <a href="#contact">
+                    <a href="/#contact">
                       <h2>Contact</h2>
                     </a>
                   </li>

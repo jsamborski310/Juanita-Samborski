@@ -17,10 +17,12 @@ export default function ContactMain() {
 
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
       body: JSON.stringify(details),
+      headers: {
+        "Accept": 'application/json',
+        // "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
+      },
     });
     setStatus("Submit");
     let result = await response.json();
@@ -38,8 +40,8 @@ export default function ContactMain() {
         <div className="col-sm-12 col-md-12 col-lg-6">
           {/* FORM  */}
           <div className="form-container">
-            <Form className="signup-form" onSubmit={handleSubmit}>
-              <Form.Group>
+            <Form className="signup-form-main" onSubmit={handleSubmit}>
+              <Form.Group className="signup-form-fields">
                 <Form.Control
                   className="name-input"
                   type="text"

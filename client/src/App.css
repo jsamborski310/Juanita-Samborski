@@ -98,7 +98,7 @@ h6 {
 
 .primary-button__line {
   width: 60px;
-  height: 10px;
+  /* height: 10px; */
   color: #ffffff;
   opacity: 100%;
 }
@@ -137,6 +137,7 @@ h6 {
   height: 10px;
   color: #ffffff;
   opacity: 100%;
+  margin-bottom: 5px;
 }
 
 .borderless-button {
@@ -151,6 +152,15 @@ h6 {
   border: none;
   min-width: 140px;
 }
+/* OFFCANVAS MENU */
+.offcanvas.offcanvas-start {
+  width: 100vw;
+}
+/* FORM */
+.form-control:focus {
+  background-color: transparent!important;
+}
+
 
 /* MEDIA QUERIES */
 

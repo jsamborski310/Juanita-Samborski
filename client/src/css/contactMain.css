@@ -60,6 +60,11 @@
   border: transparent;
   box-shadow: none;
 }
+.signup-form-fields > .form-control.name-input, 
+.signup-form-fields > .form-control.email-input, 
+.signup-form-fields > .form-control.textarea-input  {
+  color: black;
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .contactMain__container {

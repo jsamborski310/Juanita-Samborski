@@ -80,6 +80,9 @@
 .sidebar__menu-items-list {
     list-style-type: none;
 }
+.sidebar__menu-items-list h2:hover {
+    opacity: 50%;
+}
 .sidebar__close-menu {
     top:20px;
     right: -40px;
