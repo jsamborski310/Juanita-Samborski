@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Carousel from "../components/Project/Carousel";
+import Carousel from "../components/ProjectsCarousel";
 import proProjectList from "../data/proProjectsList.json";
 import useMediaQuery from "../hooks/useMediaQuery";
 

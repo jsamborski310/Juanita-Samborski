@@ -213,3 +213,8 @@
     }
  
 }
+@media (max-width: 500px) {
+    .projects__title {
+        margin-left: 0;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../css/carousel.css";
+import "../css/carousel.css";
 
 
 export default function Carousel(props) {

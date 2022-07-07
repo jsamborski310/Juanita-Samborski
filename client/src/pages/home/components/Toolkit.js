@@ -1,5 +1,5 @@
 import React from "react";
-import toolkitIcons from "../../data/toolkit.json";
+import toolkitIcons from "../../../data/toolkit.json";
 
 export default function Toolkit() {
   return (

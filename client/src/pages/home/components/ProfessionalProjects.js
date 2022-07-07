@@ -1,5 +1,5 @@
 import React from "react";
-import proProjectList from "../../data/proProjectsList.json";
+import proProjectList from "../../../data/proProjectsList.json";
 import { Tab, Row, Col, Nav } from "react-bootstrap";
 
 export default function ProfessionalProjects() {

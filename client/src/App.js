@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import Project from "./pages/Projects";
 import Sidebar from "./components/SidebarMain";
 import Ano from "./projects/Ano";

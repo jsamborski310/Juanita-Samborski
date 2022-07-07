@@ -182,8 +182,13 @@
   }
 
 }
-@media (max-width: 567px) {
+@media (min-width: 508px) and (max-width: 567px) {
   .contact__container-background-image {
     margin-top: 20vh;
+  }
+}
+@media (max-width: 507px) {
+  .contact__container-background-image {
+    margin-top: 14vw;
   }
 }
