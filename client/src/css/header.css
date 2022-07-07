@@ -131,3 +131,8 @@
 
 }
 
+@media (max-width:500px) {
+    .square {
+        display: none;
+    }
+}

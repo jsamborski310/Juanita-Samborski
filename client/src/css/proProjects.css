@@ -95,3 +95,15 @@
         justify-content: center;
     }
 }
+
+@media (max-width:500px) {
+    .proProjects__nav-item {
+        justify-content: center;
+    }
+    .proProjects__tab-number {
+        width: 25px;
+    }
+    .proProjects__tab-number > h2 {
+        font-size: 30px;
+    }
+}

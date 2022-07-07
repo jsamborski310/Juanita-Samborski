@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FooterMain() {
   return (
-    <div className="row justify-content-end">
+    <div className="row justify-content-end footer__main-container">
       <div className="col-10 footer__main-footer">
         <p>Copyright Ⓒ 2016-2022. All Rights Reserved.</p>
 

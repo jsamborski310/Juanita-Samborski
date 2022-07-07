@@ -1,6 +1,15 @@
 [
     {
         "id": 1,
+        "title": "MyTeam Stats",
+        "overview": "Javascript | Express.js | MongoDB | GraphQL/Apollo | HTML | CSS",
+        "description": "Stats tracker for youth leagues, adult recreation teams, and school sports. Allows users to view upcoming games, scores, team and player statistics.",
+        "link": "https://github.com/thenickedwards/My-Team-Stats-Tracker",
+        "image": "/images/MyTeam-Stats.png",
+        "siteLink": "https://myteam-stats.herokuapp.com/"
+    },    
+    {
+        "id": 2,
         "title": "Dogeared",
         "overview": "Javascript | Express.js | Handlebars | HTML | CSS",
         "description": "This application was created as a space for readers to build a personal, digital library. Readers can attach notes and favorite quotes to the books in their library.",
@@ -9,7 +18,7 @@
         "siteLink": "https://dogeared-2022.herokuapp.com/login"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Holidaze",
         "overview": "HTML | Javascript | CSS | API",
         "description": "HoliDAZE is an application in which the user can search for a certain holiday with the option of filtering the results by country and date.",
@@ -18,7 +27,7 @@
         "siteLink": "https://jsamborski310.github.io/Holidaze/"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Tech Talk",
         "overview": "Javascript | HTML | CSS | Handlebars | Express.js | MySQL ",
         "description": "A CMS-style blog site that allows users to publish articles, view blog posts, and post comments to share thoughts and opinions.",
@@ -27,7 +36,7 @@
         "siteLink": "https://js-tech-talk.herokuapp.com/"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "The Weather App",
         "overview": "Javascript | HTML | CSS | Open Weather API",
         "description": "A weather application so that a traveler may view weather information for various cities around the world so they may plan a trip accordingly.",

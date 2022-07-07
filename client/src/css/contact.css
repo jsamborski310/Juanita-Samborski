@@ -6,8 +6,9 @@
 .contact__container-background-image {
   position: absolute;
   height: 100%;
-  width: 90%;
+  width: 100%;
   opacity: 70%;
+  margin-top: 6vh;
 }
 
 .contactHome__container {
@@ -92,10 +93,10 @@
 
 /* FOOTER */
 .contact__home-footer {
-  position: absolute;
-  bottom: 0;
-  width: 90%;
-  right: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  /* right: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,30 +110,15 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-right: -10vw;
 }
-
+.contact__home-footer-container {
+  width: calc(100% - 20vw);
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
 /* MEDIA QUERIES */
 
-@media (max-width: 767px) {
-  .contact__container-background-image {
-    width: 180%;
-    height: 100vh;
-  }
-  .contact__container {
-    padding: 0 20px;
-  }
-  .contact__info {
-    margin-left: 0;
-    padding: 30px 30px;
-  }
-  .contact__home-footer {
-    flex-direction: column;
-    align-items: end;
-  }
-  .contact__home-footer p {
-    margin-bottom: 10px;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .contactHome__container {
@@ -151,8 +137,26 @@
   }
 }
 @media (max-width: 767px) {
+  .contact__container-background-image {
+    width: 180%;
+    height: 100vh;
+    margin-top: 10vh;
+  }
+  .contact__info {
+    margin-left: 0;
+    padding: 30px 30px;
+  }
+  .contact__home-footer {
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+  }
+  .contact__home-footer p {
+    margin-bottom: 10px;
+  }
   .contactHome__container {
     padding: 40px 40px 80px 30px;
+    margin-top: 50px;
   }
   .contactHome.primary-button {
     margin-left: 75px;
@@ -161,6 +165,25 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 150px;
+  }
+  .contactHome__container h2 {
+    font-size: 3.5rem;
+  }
+  .contactHome__container {
+    height: -webkit-fill-available;
+  }
+  .contact__home-footer-container {
+    width: 100%;
+    margin-left:0;
+    margin-right: 0;
+  }
+  .contact__menu-footer-icons {
+    margin-right: 0;
+  }
+
+}
+@media (max-width: 567px) {
+  .contact__container-background-image {
+    margin-top: 20vh;
   }
 }

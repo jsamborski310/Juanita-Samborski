@@ -69,3 +69,12 @@
         align-content: center;
     }
  }
+
+ @media (max-width: 500px) {
+    .accordion__accordion-item {
+         padding-left:0;
+     }
+    .accordion__accordion-content {
+        margin: 50px 0 30px;
+    }
+}

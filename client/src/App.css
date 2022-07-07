@@ -157,8 +157,17 @@ h6 {
   width: 100vw;
 }
 /* FORM */
-.form-control:focus {
+/* .form-control:focus {
   background-color: transparent!important;
+  box-shadow:none!important;
+} */
+/* .form-control.name-input:focus, 
+.form-control.email-input:focus {
+  background-color: transparent!important;
+  box-shadow: transparent!important;
+} */
+input.form-control:focus {
+  background-color: transparent;
 }
 
 

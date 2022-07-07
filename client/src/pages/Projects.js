@@ -66,7 +66,7 @@ export default function Projects() {
                     <hr className="primary-button__line dark-btn" />
                     <a href={/project/ + slug}>
                       <button className="primary-button dark-btn">
-                        Case Studies
+                        Case Study
                       </button>
                     </a>
                   </div>

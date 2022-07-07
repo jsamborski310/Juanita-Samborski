@@ -30,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="contact__container anchor">
+    <section id="contact" className="contactHome__main-container anchor">
 
       {/* Abstract Images */}
         <img
@@ -99,7 +99,7 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <section className="row">
+      <section className="row contact__home-footer-container">
         <div className="col-10 contact__home-footer">
           <p>Copyright Ⓒ 2016-2022. All Rights Reserved.</p>
 

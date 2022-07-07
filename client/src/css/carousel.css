@@ -73,4 +73,8 @@
     }
 }
 
-
+@media (max-width: 576px) {
+    .carousel-container {
+        margin-bottom: 50px;
+    }
+}
