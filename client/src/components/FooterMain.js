@@ -31,7 +31,7 @@ export default function FooterMain() {
             />
           </a>
 
-          <a href="mailto:juanita@48fourteen.com">
+          <a href="mailto:juanita.samborski@gmail.com">
             <img
               src={process.env.PUBLIC_URL + "/icons/email-add-black.png"}
               alt="Email Icon."

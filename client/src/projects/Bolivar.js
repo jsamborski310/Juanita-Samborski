@@ -6,62 +6,56 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function Ano() {
+export default function Bolivar() {
   // FOR LAYING DOWN THE UI
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
-      "(min-width: 768px)": function() {
+      "(min-width: 768px)": function () {
+        gsap.to("#layoutImages", {
+          scrollTrigger: {
+            trigger: "#layoutImages",
+            start: "top top",
+            // end: "+=100%",
+            // pinSpacing: "true",
+            pin: ".project__inner-layout-container",
+            end: "bottom bottom",
+            // pin: ".project__black-background",
 
- 
-
-
-    gsap.to("#layoutImages", {
-      scrollTrigger: {
-        trigger: "#layoutImages",
-        start: "top top",
-        // end: "+=100%",
-        // pinSpacing: "true",
-        pin: ".project__inner-layout-container",
-        end: "bottom bottom",
-        // pin: ".project__black-background",
-       
-        scrub: true,
-        nullTargetWarn: false,
-        // markers: "true",
+            scrub: true,
+            nullTargetWarn: false,
+            // markers: "true",
+          },
+        });
       },
     });
-  }
-}
-)}, []);
+  }, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
-      "(min-width: 768px)": function() {
+      "(min-width: 768px)": function () {
+        gsap.to("#layoutImages", {
+          scrollTrigger: {
+            trigger: "#layoutImages",
+            start: "top top",
+            // end: "+=100%",
+            // pinSpacing: "true",
+            pin: "#layoutContent",
+            end: "bottom bottom",
 
-
-    gsap.to("#layoutImages", {
-      scrollTrigger: {
-        trigger: "#layoutImages",
-        start: "top top",
-        // end: "+=100%",
-        // pinSpacing: "true",
-        pin: "#layoutContent",
-        end: "bottom bottom",
-       
-        scrub: true,
-        nullTargetWarn: false,
-        // markers: "true",
+            scrub: true,
+            nullTargetWarn: false,
+            // markers: "true",
+          },
+        });
       },
-    })  ;
-  }
-}
-  )}, []);
+    });
+  }, []);
 
   // FOR CAROUSEL (See Hooks)
   const isMobile = useMediaQuery("(min-width:991px)");
@@ -74,7 +68,7 @@ export default function Ano() {
       <section className="project__container">
         <img
           className="project__main-image"
-          src={process.env.PUBLIC_URL + "/images/Ano-Delivery.jpg"}
+          src={process.env.PUBLIC_URL + "/images/Bolivar-LAB.jpg"}
           alt="Friends eating fries and pizza."
         />
         <img
@@ -84,8 +78,8 @@ export default function Ano() {
         />
 
         <div className="project__main-info d-flex align-items-center">
-          <p className="project__main-project-number">01</p>
-          <h1 className="project__main-title">Ano Delivery</h1>
+          <p className="project__main-project-number">05</p>
+          <h1 className="project__main-title">Bolivar Threads</h1>
         </div>
       </section>
 
@@ -95,19 +89,23 @@ export default function Ano() {
           <div className="col-12 col-sm-12 col-md-5 col-lg-5">
             <div className="project__details-section">
               <h4>Client</h4>
-              <p>Ano Delivery</p>
+              <p>Bolivar Threads</p>
             </div>
             <div className="project__details-section">
               <h4>Business Type</h4>
-              <p>Online food ordering and delivery platform</p>
+              <p>Monogram eCommerce Shop</p>
             </div>
             <div className="project__details-section">
               <h4>Website</h4>
-              <p>order.anodelivery.com</p>
+              <p>bolivarthreads.com</p>
             </div>
             <div className="project__details-section">
               <h4>Completed</h4>
-              <p>In Progress</p>
+              <p>2019</p>
+            </div>
+            <div className="project__details-section">
+              <h4>Status</h4>
+              <p>Managed and maintained by Bolivar Threads</p>
             </div>
           </div>
 
@@ -148,7 +146,7 @@ export default function Ano() {
 
             <div className="row g-5 pt-5">
               <div className="col-12 col-sm-12 col-md-6 col-lg-6 project__contributions-item">
-                <p>Website Redesign</p>
+                <p>Website Design</p>
                 <hr />
                 <p>Wireframing</p>
                 <hr />
@@ -156,9 +154,9 @@ export default function Ano() {
                 <hr />
               </div>
               <div className="col-12 col-sm-12 col-md-6 col-lg-6 project__contributions-item">
-                <p>Front-End Development</p>
+                <p>UX Flow</p>
                 <hr />
-                <p>HTML</p>
+                <p>WordPress Development</p>
                 <hr />
                 <p>CSS</p>
                 <hr />
@@ -202,57 +200,146 @@ export default function Ano() {
 
             <h4 className="mb-5">Environment & Tools</h4>
             <ul className="project__tool-list">
-              <li>C#</li>
-              <li>ASP.NET</li>
-              <li>Javascript</li>
-              <li>HTML</li>
+              <li>WordPress</li>
+              <li>Elementor</li>
+              <li>WPRocket</li>
               <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Visual Studio</li>
-              <li>GitHub</li>
               <li>Adobe XD</li>
+              <li>Photoshop</li>
             </ul>
           </div>
         </div>
 
-        {/* ORIGINAL STRUCTURE */}
+        {/* BOLIVAR OVERVIEW */}
+        {/* <div className="container" style={{ height: "100vh", position: "relative" }}> */}
+          <div className="row" 
+          // style={{ height: "100vh" }}
+          >
+            <img
+              src={process.env.PUBLIC_URL + "/images/Bolivar.png"}
+              alt="Bolivar word."
+              // className="project__tools-image"
+              // style={{ position: "absolute", zIndex: "0", width: "70%", top: "-35vh", left: "-40px" }}
+              style={{ width: "70%", marginLeft: "-10px" }}
+            />
 
-        <div className="row mt-5 mb-5 d-flex align-items-center project__structure-container">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6"></div>
+            <div
+              className="col-12 col-sm-12 col-md-6 col-lg-6"
+              style={{ marginBottom: "150px" }}
+            >
+              <h4 className="mb-5">Loren Ipsum</h4>
+              <p>
+                Before implementing the design created in Adobe XD on the
+                front-end, I updated an outdated version of Bootstrap, cleaned
+                up and restructured the existing HTML and CSS.
+              </p>
+            </div>
+            </div>
 
-          {/* Abstract Image */}
-          {/* <img
-            src={process.env.PUBLIC_URL + "/images/abstract-four-arrows.png"}
-            alt="Grid of plus symbol."
-            className="project__structure-image"
-          /> */}
+            {/* IMAGES OF THREADS */}
+            <div className="project__bolivar-threads-images" style={{ position: "relative" }}>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-threads-1.png"}
+                alt="Bolivar word."
+                // className="project__tools-image"
+                style={{
+                  position: "absolute",
+                  width: "40%",
+                  left: "-2vw",
+                  top: "-15vh",
+                  boxShadow: "rgb(0 0 0 / 22%) 0px 3px 50px",
+                  zIndex: "0",
+                }}
+              />
 
-          <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
-          <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-            <h4 className="mb-5">Original Structure</h4>
-            <p>
-              Although highly skilled in backend development, design and
-              front-end development were not in the developers' wheelhouse. So,
-              he structured the website with one goal in mind: make it work.
-            </p>
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-threads-2.png"}
+                alt="Bolivar word."
+                // className="project__tools-image"
+                style={{
+                  position: "absolute",
+                  left: "20vh",
+                  zIndex: "30",
+                  width: "70vw",
+                  boxShadow: "rgb(0 0 0 / 22%) 0px 3px 50px",
+                }}
+              />
+
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-threads-3.png"}
+                alt="Bolivar word."
+                // className="project__tools-image"
+                style={{
+                  position: "absolute",
+                  top: "30vh",
+                  zIndex: "20",
+                  width: "60vw",
+                  boxShadow: "rgb(0 0 0 / 22%) 0px 3px 50px",
+                }}
+              />
+            </div>
+          {/* </div> */}
+        {/* </div> */}
+
+        {/* PRODUCT PICTURES */}
+
+        {/* <div className="container" style={{position: "relative"}}> */}
+          <div className="row mt-5 mb-5">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-7">
+              <h4 className="mb-5">Loren Ipsum</h4>
+              <p>
+                Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-6 col-lg-5"></div>
           </div>
-          <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
 
-          <img
-            src={
-              process.env.PUBLIC_URL +
-              "/images/ano-delivery-original-structure.png"
-            }
-            alt="Screenshots of original website structure."
-          />
-        </div>
+          {/* --images-- */}
+          <div className="row d-flex g-3 align-contents-end">
+            <div className="col-6 col-md-2 col-lg-2"></div>
+            <div className="col-6 col-md-2 col-lg-2"></div>
+
+            <div className="col-6 col-md-2 col-lg-2">
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-product-1.png"}
+                alt="Bolivar word."
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col-6 col-md-2 col-lg-2">
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-product-2.png"}
+                alt="Bolivar word."
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col-6 col-md-2 col-lg-2">
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-product-3.png"}
+                alt="Bolivar word."
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col-6 col-md-2 col-lg-2">
+              <img
+                src={process.env.PUBLIC_URL + "/images/Bolivar-product-4.png"}
+                alt="Bolivar word."
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+        {/* </div> */}
 
         {/* STYLE GUIDE */}
-        <div className="pt-5 pb-5 mb-5 project__style-guide-box">
+        <div className="pt-5 pb-5 project__style-guide-box">
           <div id="desc">
             <h4 className="mb-5">Style Guide</h4>
             <p>
               The color pallete was inspired by the company's logo. Typography
-              and font styles were selected for readability.
+              and font styles were selected for simplicity and readability.
             </p>
           </div>
           <div id="blank"></div>
@@ -260,7 +347,12 @@ export default function Ano() {
           <div id="typo" className="mt-5">
             <h3 className="mb-5">Typeface</h3>
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-typeface.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-Typography-1.png"}
+              width="50%"
+              alt="Screenshots of typeface."
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/images/Bolivar-Typography-2.png"}
               width="50%"
               alt="Screenshots of typeface."
             />
@@ -269,7 +361,7 @@ export default function Ano() {
           <div id="typoHeading">
             <h3 className="mb-5 mt-5">Styles</h3>
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-styles.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-styles.png"}
               // width="70%"
               alt="Screenshots of font styles."
             />
@@ -277,7 +369,7 @@ export default function Ano() {
           <div id="comp">
             <h3 className="mb-5">Colors</h3>
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-colors.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-colors.png"}
               width="100%"
               alt="Screenshots of colors. Yellow, black, gray, and white."
             />
@@ -286,12 +378,36 @@ export default function Ano() {
           <div id="button">
             <h3 className="mb-5 mt-5">Buttons</h3>
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-buttons.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-buttons.png"}
               width="70%"
               alt="Screenshots of buttons."
             />
           </div>
         </div>
+      </div>
+
+      {/* ORGANIZING PRODUCTS OVERVIEW */}
+
+      <div className="project__details-container">
+        <div className="row mt-5 mb-5">
+          <div className="col-12 col-sm-12 col-md-6 col-lg-5"></div>
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-7 pb-5">
+            <h4 className="mb-5">Loren Ipsum</h4>
+            <p>
+              Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <img
+          src={
+            process.env.PUBLIC_URL + "/images/Bolivar-Organizing-Products.png"
+          }
+          width="100%"
+          alt="Screenshots of buttons."
+        />
       </div>
 
       {/* LAYING DOWN THE DESIGN */}
@@ -303,13 +419,8 @@ export default function Ano() {
           className="project__inner-layout-container"
         ></div> */}
 
-        <div
-          id="layoutContainer"
-          className="project__layout-container-inner"
-        >
-
-
-<div id="layoutContent" className="project__layout-desc">
+        <div id="layoutContainer" className="project__layout-container-inner">
+          <div id="layoutContent" className="project__layout-desc">
             <div id="description" className="project__layout-content-inner">
               <div>
                 <img
@@ -323,36 +434,39 @@ export default function Ano() {
 
                 <h4 className="mb-5">Laying Down the UI</h4>
                 <p>
-                The user interface was designed for simplicity, so that a user may be able to quickly locate a restaurant, select their meal, and place an order. HTML and CSS were used to implement the new, visually appealing design that enticed users with images of food options. 
+                  Loren ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
                 </p>
               </div>
             </div>
           </div>
 
-
           <div id="layoutImages" className="project__container-images">
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-home.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-home.png"}
               className="img-fluid mb-5 project__images"
               alt="Ano Delivery home page."
             />
             <img
-              src={
-                process.env.PUBLIC_URL + "/images/ano-delivery-restaurant.png"
-              }
+              src={process.env.PUBLIC_URL + "/images/Bolivar-shop.png"}
               className="img-fluid mb-5 project__images"
               alt="Ano Delivery restaurant page."
             />
             <img
-              src={process.env.PUBLIC_URL + "/images/ano-delivery-cart.png"}
+              src={process.env.PUBLIC_URL + "/images/Bolivar-product-page.png"}
+              className="img-fluid mb-5 project__images"
+              alt="Ano Delivery restaurant page."
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/images/Bolivar-about.png"}
               className="img-fluid mb-5 project__images"
               alt="Ano Delivery cart page."
             />
           </div>
-
-
-
-
         </div>
       </div>
 
@@ -370,47 +484,49 @@ export default function Ano() {
           order-sm-1 order-md-2 order-lg-2
         "
         >
-          <h4>Designing for multiple users</h4>
+          <h4>Loren Ipsum</h4>
           <p>
-          The platform has three types of users: Customers, Restaurants, and Drivers. In addition to ensuring that customers are able to easily place an order, I designed a user interface for restaurant owners that enabled them to update their store information, and quickly view and manage all incoming orders. 
+            Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
           </p>
         </div>
       </div>
 
       {/* ADDITIONAL PROJECT IMAGES */}
-      <div className="project__details-container project__additional-container row align-content-center">
-
-
-
-        <div 
-          className="col-sm-12 col-md-6 col-lg-6" 
-          style={{zIndex: "10"}}>
+      <div
+        className="project__details-container project__additional-container row align-items-center d-flex g-5"
+        style={{ minHeight: "100vh", minHeight: "-webkit-fill-available", marginBottom: "100px" }}
+      >
+        <div className="col-sm-12 col-md-9 col-lg-9" style={{ zIndex: "10" }}>
           <img
-            src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
+            src={process.env.PUBLIC_URL + "/images/Bolivar-Customize-Bag.png"}
             className="img-fluid w-100 mb-5 project__images"
             alt="Ano Delivery active orders page."
           />
         </div>
-        <div 
-          className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center"
-          style={{zIndex: "10"}}
-          >
+        <div
+          className="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center"
+          style={{ zIndex: "10" }}
+        >
           <img
-            src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
-            className="img-fluid w-100 mb-5"
-            alt="Ano Delivery edit restaurant section."
+            src={process.env.PUBLIC_URL + "/images/Bolivar-text-layers.png"}
+            className="img-fluid mb-5 project__images"
+            alt="Ano Delivery cart page."
           />
         </div>
 
         <img
-          src={process.env.PUBLIC_URL + "/images/abstract-grid-dashed-lines.png"}
+          src={
+            process.env.PUBLIC_URL + "/images/abstract-grid-dashed-lines.png"
+          }
           alt="Screenshots of original website structure."
           className="project__additional-abstract-image"
         />
-
-
       </div>
-
 
       {/* MORE PROJECTS CAROUSEL */}
 

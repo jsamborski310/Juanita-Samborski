@@ -128,7 +128,7 @@ export default function Contact() {
               />
             </a>
 
-            <a href="mailto:juanita@48fourteen.com">
+            <a href="mailto:juanita.samborski@gmail.com">
               <img
                 src={process.env.PUBLIC_URL + "/icons/email-white-2x.png"}
                 alt="Email Icon."
