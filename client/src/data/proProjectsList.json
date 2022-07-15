@@ -6,8 +6,8 @@
         "role": "Design | Front End Development",
         "number": "01",
         "image": "/images/Ano-Delivery.jpg",
-        "description": "Online food ordering and delivery platform",
-        "skills": ["Website Redesign", "HTML", "Frontend Development", "CSS"],
+        "description": "Online food ordering and delivery platform.",
+        "skills": ["Website Redesign", "Frontend Development", "HTML", "CSS"],
         "slug": "ano-delivery"
     },
     {
@@ -17,53 +17,20 @@
         "role": "UX/UI | Development | Project Management",
         "number": "02",
         "image": "/images/FileEvictions-Welcome.png",
-        "description": "Lorne ipsum",
+        "description": "Software for Evictions.",
         "skills": ["Website Design", "WordPress Development", "Software UX/UI", "Project Management"],
         "slug": "file-evictions"
     },
     {
         "id": 3,
-        "title": "Voyager Space Holdings",
-        "shortTitle": "Voyager",
-        "role": "Design | Development",
-        "number": "03",
-        "image": "/images/Voyager-LAB.jpg",
-        "description": "Loren Ipusum",
-        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
-        "slug": "voyager-space-holdings"
-    },
-    {
-        "id": 4,
-        "title": "Multiverse Publishing",
-        "shortTitle": "Publishing",
-        "role": "Design | Development",
-        "number": "04",
-        "image": "/images/Multiverse.jpg",
-        "description": "Publishing company. Online book shop.",
-        "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
-        "slug": "multiverse-publishing"
-    },
-    {
-        "id": 5,
         "title": "Boliver Threads",
         "shortTitle": "Threads",
         "role": "Design | Development",
-        "number": "05",
+        "number": "03",
         "image": "/images/Bolivar-LAB.jpg",
         "description": "Online monogram shop.",
         "skills": ["Website Design", "WordPress Development", "Software UI", "eCommerce"],
         "slug": "bolivar-threads"
-    },
-    {
-        "id": 6,
-        "title": "Society of Advanced Bronchoscopy",
-        "shortTitle": "Bronchoscopy",
-        "role": "Design | Development",
-        "number": "06",
-        "image": "/images/SAB-Login-LAB.jpg",
-        "description": "Loren ipsum",
-        "skills": ["Website Design", "WordPress Development", "Membership", "Subscriptions", "Event Tickets"],
-        "slug": "society-of-advanced-bronchoscopy"
     }
 ]
     

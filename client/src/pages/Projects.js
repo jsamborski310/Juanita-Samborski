@@ -24,10 +24,7 @@ export default function Projects() {
         <div className="row align-items-end projects__hero-columns">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <p className="p-5 ml-5 projects__overview">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            Over the years, I've had the opportunity to design and develop websites for a wide range of clients. These projects feature some of my work and shed a bit of light on my process.
             </p>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6"></div>

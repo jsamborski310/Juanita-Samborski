@@ -484,7 +484,7 @@ export default function Bolivar() {
           order-sm-1 order-md-2 order-lg-2
         "
         >
-          <h4>Loren Ipsum</h4>
+          <h4 className="mb-5">Loren Ipsum</h4>
           <p>
             Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
