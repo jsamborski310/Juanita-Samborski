@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "MyTeam Stats",
-        "overview": "Javascript | Express.js | MongoDB | GraphQL/Apollo | HTML | CSS",
+        "overview": "React | Javascript | HTML | CSS | Express.js | MongoDB | GraphQL/Apollo",
         "description": "Stats tracker for youth leagues, adult recreation teams, and school sports. Allows users to view upcoming games, scores, team and player statistics.",
         "link": "https://github.com/thenickedwards/My-Team-Stats-Tracker",
         "image": "/images/MyTeam-Stats.png",

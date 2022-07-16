@@ -11,57 +11,43 @@ export default function Ano() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
-      "(min-width: 768px)": function() {
-
- 
-
-
-    gsap.to("#layoutImages", {
-      scrollTrigger: {
-        trigger: "#layoutImages",
-        start: "top top",
-        // end: "+=100%",
-        // pinSpacing: "true",
-        pin: ".project__inner-layout-container",
-        end: "bottom bottom",
-        // pin: ".project__black-background",
-       
-        scrub: true,
-        nullTargetWarn: false,
-        // markers: "true",
+      "(min-width: 768px)": function () {
+        gsap.to("#layoutImages", {
+          scrollTrigger: {
+            trigger: "#layoutImages",
+            start: "top top",
+            pin: ".project__inner-layout-container",
+            end: "bottom bottom",
+            scrub: true,
+            nullTargetWarn: false,
+            // markers: "true",
+          },
+        });
       },
     });
-  }
-}
-)}, []);
+  }, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
-      "(min-width: 768px)": function() {
+      "(min-width: 768px)": function () {
+        gsap.to("#layoutImages", {
+          scrollTrigger: {
+            trigger: "#layoutImages",
+            start: "top top",
+            pin: "#layoutContent",
+            end: "bottom bottom",
 
-
-    gsap.to("#layoutImages", {
-      scrollTrigger: {
-        trigger: "#layoutImages",
-        start: "top top",
-        // end: "+=100%",
-        // pinSpacing: "true",
-        pin: "#layoutContent",
-        end: "bottom bottom",
-       
-        scrub: true,
-        nullTargetWarn: false,
-        // markers: "true",
+            scrub: true,
+            nullTargetWarn: false,
+            // markers: "true",
+          },
+        });
       },
-    })  ;
-  }
-}
-  )}, []);
+    });
+  }, []);
 
   // FOR CAROUSEL (See Hooks)
   const isMobile = useMediaQuery("(min-width:991px)");
@@ -130,7 +116,7 @@ export default function Ano() {
             <p>
               That backend developer, in turn, reached out to me to create a
               design that was simple, cohesive, and user-friendly, and to
-              implement it on the front-end.
+              implement it on the frontend.
             </p>
           </div>
         </div>
@@ -179,8 +165,8 @@ export default function Ano() {
             </p>
             <p>
               Before implementing the design created in Adobe XD on the
-              front-end, I updated an outdated version of Bootstrap, cleaned up
-              and restructured the existing HTML and CSS.
+              frontend, I updated an outdated version of Bootstrap and cleaned
+              up and restructured the existing HTML and CSS.
             </p>
           </div>
           <div className="col-12 col-sm-12 col-md-5 col-lg-5 project__tools-box">
@@ -218,20 +204,12 @@ export default function Ano() {
         {/* ORIGINAL STRUCTURE */}
 
         <div className="row mt-5 mb-5 d-flex align-items-center project__structure-container">
-
-          {/* Abstract Image */}
-          {/* <img
-            src={process.env.PUBLIC_URL + "/images/abstract-four-arrows.png"}
-            alt="Grid of plus symbol."
-            className="project__structure-image"
-          /> */}
-
           <div className="col-12 col-sm-12 col-md-3 col-lg-3"></div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <h4 className="mb-5">Original Structure</h4>
             <p>
               Although highly skilled in backend development, design and
-              front-end development were not in the developers' wheelhouse. So,
+              frontend development were not in the developers' wheelhouse. So,
               he structured the website with one goal in mind: make it work.
             </p>
           </div>
@@ -270,7 +248,6 @@ export default function Ano() {
             <h3 className="mb-5 mt-5">Styles</h3>
             <img
               src={process.env.PUBLIC_URL + "/images/ano-delivery-styles.png"}
-              // width="70%"
               alt="Screenshots of font styles."
             />
           </div>
@@ -297,19 +274,8 @@ export default function Ano() {
       {/* LAYING DOWN THE DESIGN */}
 
       <div id="mainContainer" className="project__layout-container clearfix">
-        {/* <div
-          // id="blackContainer" className="project__black-background"
-          id="innerLayoutContainer"
-          className="project__inner-layout-container"
-        ></div> */}
-
-        <div
-          id="layoutContainer"
-          className="project__layout-container-inner"
-        >
-
-
-<div id="layoutContent" className="project__layout-desc">
+        <div id="layoutContainer" className="project__layout-container-inner">
+          <div id="layoutContent" className="project__layout-desc">
             <div id="description" className="project__layout-content-inner">
               <div>
                 <img
@@ -323,12 +289,15 @@ export default function Ano() {
 
                 <h4 className="mb-5">Laying Down the UI</h4>
                 <p>
-                The user interface was designed for simplicity, so that a user may be able to quickly locate a restaurant, select their meal, and place an order. HTML and CSS were used to implement the new, visually appealing design that enticed users with images of food options. 
+                  The user interface was designed for simplicity, so that a user
+                  may be able to quickly locate a restaurant, select their meal,
+                  and place an order. HTML and CSS were used to implement the
+                  new, visually appealing design that would entice users with
+                  images of food options.
                 </p>
               </div>
             </div>
           </div>
-
 
           <div id="layoutImages" className="project__container-images">
             <img
@@ -349,10 +318,6 @@ export default function Ano() {
               alt="Ano Delivery cart page."
             />
           </div>
-
-
-
-
         </div>
       </div>
 
@@ -372,29 +337,28 @@ export default function Ano() {
         >
           <h4 className="mb-5">Designing for multiple users</h4>
           <p>
-          The platform has three types of users: Customers, Restaurants, and Drivers. In addition to ensuring that customers are able to easily place an order, I designed a user interface for restaurant owners that enabled them to update their store information, and quickly view and manage all incoming orders. 
+            The platform has three types of users: Customers, Restaurants, and
+            Drivers. In addition to ensuring that customers are able to easily
+            place an order, I designed a user interface for restaurant owners
+            that enabled them to update their store information, and quickly
+            view and manage all incoming orders.
           </p>
         </div>
       </div>
 
       {/* ADDITIONAL PROJECT IMAGES */}
       <div className="project__details-container project__additional-container row align-content-center">
-
-
-
-        <div 
-          className="col-sm-12 col-md-6 col-lg-6" 
-          style={{zIndex: "10"}}>
+        <div className="col-sm-12 col-md-6 col-lg-6" style={{ zIndex: "10" }}>
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-active.png"}
             className="img-fluid w-100 mb-5 project__images"
             alt="Ano Delivery active orders page."
           />
         </div>
-        <div 
+        <div
           className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center"
-          style={{zIndex: "10"}}
-          >
+          style={{ zIndex: "10" }}
+        >
           <img
             src={process.env.PUBLIC_URL + "/images/ano-delivery-orders.png"}
             className="img-fluid w-100 mb-5"
@@ -403,14 +367,13 @@ export default function Ano() {
         </div>
 
         <img
-          src={process.env.PUBLIC_URL + "/images/abstract-grid-dashed-lines.png"}
+          src={
+            process.env.PUBLIC_URL + "/images/abstract-grid-dashed-lines.png"
+          }
           alt="Screenshots of original website structure."
           className="project__additional-abstract-image"
         />
-
-
       </div>
-
 
       {/* MORE PROJECTS CAROUSEL */}
 

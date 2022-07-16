@@ -23,7 +23,10 @@ export default function About() {
             <p>
                 I am forever curious. Interested in the interesting. Perpetually
                 looking for ways to create designs that are bold and clean, and
-                websites that are intuitive, simple and convenient.
+                develop websites that are intuitive, simple and convenient. 
+            </p>
+            <p>
+                I am a Full Stack Developer with a passion for Front End Development.
             </p>
             <p>
                 Since 2016, I have partnered with incredible non-profit
@@ -46,7 +49,7 @@ export default function About() {
             </div>
             <div className="primary-button__container">
                 <hr className="primary-button__line" />
-                <a href="./images/samborski-resume.pdf" download="Samborski Resume" target="_blank">
+                <a href="./images/Samborski-Resume-FE.pdf" download="Samborski Resume" target="_blank">
                   <button className="primary-button">
                     View Resume
                   </button>

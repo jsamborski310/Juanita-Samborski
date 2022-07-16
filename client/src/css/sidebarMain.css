@@ -94,6 +94,9 @@
 .sidebarMain__close-menu:hover {
     opacity: 60%;
 }
+.sidebarMain__menu-items-list h2:hover {
+    opacity: 50%;
+}
 
 @media (max-width:768px) {
     .sidebarMain__sidebar {
