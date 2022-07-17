@@ -120,10 +120,7 @@
 /* SITE LAYOUT */
 .project__layout-container {
   width: calc(100% - 120px);
-  /* margin-left: 120px; */
-  /* width:100%; */
   margin-left: 65px;
-  /* margin-right: 65px; */
   display: block;
   height: 100vh;
   position: relative;
@@ -158,11 +155,8 @@
 }
 
 .project__container-images {
-  /* width: 50%; */
   width: 45%;
   padding: 50px;
-  /* padding-left: 40px; */
-  /* padding-top: 40px; */
   float: right;
   display: flex;
   flex-direction: column;
@@ -175,20 +169,7 @@
   transform: translate3d(0, 0, 0);
   will-change: position, transform;
 }
-/* .project__black-background {
-    height: 70vh;
-    background-color: black;
-    width: 100%;
-    position: absolute;
-    /* top:0; */
-/* }  */
-/* .project__inner-layout-container { */
-/* height: 70vh;
-    width: 100%;
-    position: absolute; */
-/* top:0; */
-/* background-color: black; */
-/* } */
+
 .clearfix::after {
   display: block;
   content: "";
@@ -252,6 +233,13 @@
 /* PROJECT: BOLIVAR */
 .project__bolivar-threads-images {
   height: 100vh;
+}
+/* PROJECT: FILE EVICTIONS */
+.project__fileevictions-tool-list {
+  column-count: 3;
+}
+.project__fileevictions-tool-box-container {
+  margin-bottom: 100px;
 }
 
 /* MEDIA QUERY */
@@ -376,19 +364,22 @@
     margin-left: 0;
     position: inherit;
   }
-  /* .project__layout-container-inner {
-    display: flex;
-    flex-direction: column-reverse;
-} */
+ 
   .project__container-images {
     width: 100%;
     margin-top: -200px;
-    /* float:none; */
   }
   #layoutContent,
   .project__layout-content-inner {
     width: 100%;
     max-width: 100%;
+  }
+
+  .project__fileevictions-tool-list {
+    column-count: 2;
+  }
+  .project__fileevictions-tool-box-container {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 576px) {
@@ -398,6 +389,9 @@
     .project__layout-content-inner > div > p {
         padding-right: 40px;
         padding-bottom: 50px;
+    }
+    .project__fileevictions-tool-list {
+      column-count: 1;
     }
 }
 @media (min-width: 768px) and (max-width: 1100px) {
@@ -409,9 +403,12 @@
   .project__bolivar-threads-images {
     height: 60vh;
   }
-}
-/* @media (max-width: 767px) {
-  .project__bolivar-details-container {
-    height: -webkit-fill-available;
+  .project__fileevictions-portal-layout {
+    margin-top: 0;
   }
-} */
+}
+@media (min-width: 768px) {
+  .project__fileevictions-portal-layout {
+    padding-top: 60px;
+  }
+}

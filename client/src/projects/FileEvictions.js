@@ -11,19 +11,14 @@ export default function FileEvictions() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
       "(min-width: 768px)": function () {
         gsap.to("#layoutImages", {
           scrollTrigger: {
             trigger: "#layoutImages",
             start: "top top",
-            // end: "+=100%",
-            // pinSpacing: "true",
             pin: ".project__inner-layout-container",
             end: "bottom bottom",
-            // pin: ".project__black-background",
-
             scrub: true,
             nullTargetWarn: false,
             // markers: "true",
@@ -36,18 +31,14 @@ export default function FileEvictions() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // ScrollTrigger.saveStyles(".desktop");
     ScrollTrigger.matchMedia({
       "(min-width: 768px)": function () {
         gsap.to("#layoutImages", {
           scrollTrigger: {
             trigger: "#layoutImages",
             start: "top top",
-            // end: "+=100%",
-            // pinSpacing: "true",
             pin: "#layoutContent",
             end: "bottom bottom",
-
             scrub: true,
             nullTargetWarn: false,
             // markers: "true",
@@ -69,7 +60,7 @@ export default function FileEvictions() {
         <img
           className="project__main-image"
           src={process.env.PUBLIC_URL + "/images/FileEvictions-Welcome.png"}
-          alt="Friends eating fries and pizza."
+          alt="Vector of man filling out an application."
         />
         <img
           className="project__main-image-abstract"
@@ -111,25 +102,19 @@ export default function FileEvictions() {
 
           <div className="col-12 col-sm-12 col-md-7 col-lg-7">
             <p>
-              In small-town Ellensburg, Washington, food delivery options were
-              limited. Two college friends endeavored to fill that gap. They put
-              together a simple one page website and provided a phone number for
-              customers to text their order from any restaurant in the
-              surrounding area. With their exceptional and reliable customer
-              service, word-of-mouth fueled the growth of the business.
+              With years of experience as a landlord, the client struggled with
+              the downside of renting: Evictions. Attorneys are expensive, the
+              legal process convoluted, and court delays often resulted in
+              greater financial loss. So, he sought out a solution that would
+              help other landlords like him.
             </p>
             <p>
-              After several years of success, Ano Delivery was ready to expand.
-              They reached out to a talented backend developer to build out a
-              platform that would streamline their process, to make it easy for
-              customers to place their order, restaurants to receive the order,
-              and drivers to deliver the order.
+              Initially, the client wanted a simple website that would allow
+              Users to easily complete forms that would, in turn, generate the
+              legal documents required to evict a tenant in the state of New
+              Jersey.
             </p>
-            <p>
-              That backend developer, in turn, reached out to me to create a
-              design that was simple, cohesive, and user-friendly, and to
-              implement it on the front-end.
-            </p>
+            <p>And that's where I come in.</p>
           </div>
         </div>
 
@@ -169,8 +154,32 @@ export default function FileEvictions() {
           </div>
         </div>
 
+        {/* THE SETUP */}
+        <div className="row mt-5 pt-5 pb-5">
+          <h4 className="mb-5">The Set Up</h4>
+          <p>
+            During several meetings with the client, and many more hours
+            research, brainstorming and planning, it became clear this was a
+            project much larger than anticipated, with potential that had yet to
+            be uncovered.
+          </p>
+          <p>
+            While the original goal may have been to create a simple WordPress
+            website with a forms plugin, it wasn't a well-suited solution; there
+            were too many limitations. We agreed that a custom solution was
+            needed.
+          </p>
+          <p>
+            I set out to build the FileEvictions' website on WordPress. This
+            would provide Users with information about the company and details
+            about the legal process for evictions. The portal, however, was to
+            be built in Vue.js. With my UI designs created in Adobe XD, I helped
+            manage a team of developers to begin building the software.
+          </p>
+        </div>
+
         {/* ENVIRONMENT & TOOLS */}
-        <div className="row mt-5 pb-5 g-5 d-flex">
+        <div className="row mt-5 g-5 d-flex project__fileevictions-tool-box-container">
           <div className="project__tools-box">
             <img
               src={
@@ -178,7 +187,7 @@ export default function FileEvictions() {
               }
               alt="Grid of diagonal lines in square."
               className="project__tools-image-background"
-              style={{ right: "-50px" }}
+              style={{ right: "-50px", top: "-70px" }}
             />
 
             <img
@@ -190,7 +199,7 @@ export default function FileEvictions() {
             />
 
             <h4 className="mb-5">Environment & Tools</h4>
-            <ul className="project__tool-list" style={{ columnCount: "3" }}>
+            <ul className="project__tool-list project__fileevictions-tool-list">
               <li>WordPress</li>
               <li>Elementor</li>
               <li>WP Rocket</li>
@@ -203,33 +212,11 @@ export default function FileEvictions() {
             </ul>
           </div>
         </div>
-
-        {/* THE SETUP */}
-        <div className="row mt-5">
-          <h4 className="mb-5">The Set Up</h4>
-          <p>
-            The environment was established by the backend developer. With many
-            years of experience in the field, he worked with a language and a
-            framework that would support the needs of the project and ensure
-            stability.
-          </p>
-          <p>
-            Before implementing the design created in Adobe XD on the front-end,
-            I updated an outdated version of Bootstrap, cleaned up and
-            restructured the existing HTML and CSS.
-          </p>
-        </div>
       </div>
 
       {/* LAYING DOWN THE DESIGN */}
 
       <div id="mainContainer" className="project__layout-container clearfix">
-        {/* <div
-          // id="blackContainer" className="project__black-background"
-          id="innerLayoutContainer"
-          className="project__inner-layout-container"
-        ></div> */}
-
         <div id="layoutContainer" className="project__layout-container-inner">
           <div id="layoutContent" className="project__layout-desc">
             <div id="description" className="project__layout-content-inner">
@@ -239,17 +226,18 @@ export default function FileEvictions() {
                     process.env.PUBLIC_URL +
                     "/images/abstract-square-and-dots.png"
                   }
-                  alt="Screenshots of original website structure."
+                  alt="Abstract. Square and dots."
                   className="project__layout-description-image"
                 />
 
                 <h4 className="mb-5">Laying Down the UI</h4>
                 <p>
-                  The user interface was designed for simplicity, so that a user
-                  may be able to quickly locate a restaurant, select their meal,
-                  and place an order. HTML and CSS were used to implement the
-                  new, visually appealing design that enticed users with images
-                  of food options.
+                  With a lot of content that needed to be included on the
+                  company website, it was important to organize the information
+                  being provided. White space, accordions, navigations and other
+                  methods were used to reduce eye strain and help with focus. I
+                  installed and configured WordPress and plugins that allowed me
+                  to quickly build out the frontend.
                 </p>
               </div>
             </div>
@@ -259,19 +247,19 @@ export default function FileEvictions() {
             <img
               src={process.env.PUBLIC_URL + "/images/FileEvictions-Home-2.png"}
               className="img-fluid mb-5 project__images"
-              alt="Ano Delivery home page."
+              alt="FileEvictions Home page."
             />
             <img
               src={process.env.PUBLIC_URL + "/images/FileEvictions-Help.png"}
               className="img-fluid mb-5 project__images"
-              alt="Ano Delivery restaurant page."
+              alt="FileEvictions Help page."
             />
             <img
               src={
                 process.env.PUBLIC_URL + "/images/FileEvictions-Upcoming.png"
               }
               className="img-fluid mb-5 project__images"
-              alt="Ano Delivery cart page."
+              alt="FileEvictions Upcoming Features page."
             />
           </div>
         </div>
@@ -285,9 +273,10 @@ export default function FileEvictions() {
           <div className="col-12 col-sm-12 col-md-9 col-lg-9 mb-5">
             <h4 className="mb-5">Style Guide</h4>
             <p>
-              Although highly skilled in backend development, design and
-              front-end development were not in the developers' wheelhouse. So,
-              he structured the website with one goal in mind: make it work.
+              Our custom portal allows our Users, both landlords and attorneys,
+              to manage evictions from a dashboard and complete forms. I created
+              this style guide so that I could re-use components when designing
+              the UI, and later handed it off to the development team.
             </p>
           </div>
 
@@ -295,7 +284,7 @@ export default function FileEvictions() {
             src={
               process.env.PUBLIC_URL + "/images/FileEvictions-StyleGuide.png"
             }
-            alt="Screenshots of original website structure."
+            alt="FileEvictions Style Guide."
           />
         </div>
       </div>
@@ -314,13 +303,12 @@ export default function FileEvictions() {
           order-sm-1 order-md-2 order-lg-2
         "
         >
-          <h4 className="mb-5">Designing for multiple users</h4>
+          <h4 className="mb-5">It began with several sketches</h4>
           <p>
-            The platform has three types of users: Customers, Restaurants, and
-            Drivers. In addition to ensuring that customers are able to easily
-            place an order, I designed a user interface for restaurant owners
-            that enabled them to update their store information, and quickly
-            view and manage all incoming orders.
+            Before opening up Adobe XD to design the UI, I began mapping out the
+            layout with rough sketches. There were several iterations, but each
+            gave the client and I the opportunity to discuss features and
+            functionality we wanted Users to have.
           </p>
         </div>
       </div>
@@ -328,13 +316,16 @@ export default function FileEvictions() {
       {/* ADDITIONAL PROJECT IMAGES */}
       <div
         className="project__details-container project__additional-container row d-flex align-items-center justify-content-center mb-5"
-        style={{ height: "100vh" }}
+        style={{ 
+          minHeight: "100vh",
+          minHeight: "-webkit-fill-available" 
+        }}
       >
         <div style={{ zIndex: "10", width: "80%" }}>
           <img
             src={process.env.PUBLIC_URL + "/images/FileEvictions-sketch.jpg"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
+            alt="Three pages with sketches of the FileEvictions portal in the planning phase."
           />
         </div>
 
@@ -350,13 +341,13 @@ export default function FileEvictions() {
       {/* DASHBOARD DETAILS*/}
       <div className="project__details-container row align-content-center pt-5 pb-5 mt-5">
         <div className="col-sm-12 col-md-8 col-lg-8">
-          <h4 className="mb-5">Designing for multiple users</h4>
+          <h4 className="mb-5">A glimpse of the portal</h4>
           <p>
-            The platform has three types of users: Customers, Restaurants, and
-            Drivers. In addition to ensuring that customers are able to easily
-            place an order, I designed a user interface for restaurant owners
-            that enabled them to update their store information, and quickly
-            view and manage all incoming orders.
+            The FileEvictions portal is quite extensive. It provides Users, both
+            landlords and attorneys, with a guided process to file evictions.
+            Users can complete tailored forms that generate legal documents, and
+            they have access to several organizational tools to make the legal
+            process less cumbersome.
           </p>
         </div>
       </div>
@@ -365,51 +356,52 @@ export default function FileEvictions() {
 
       <div className="project__details-container row align-content-center pb-5 g-5">
         <div className="col-sm-12 col-md-6 col-lg-6">
-
-        <img
+          <img
             src={process.env.PUBLIC_URL + "/images/FileEvictions-Dashboard.png"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Dashboard."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-        <img
+          <img
             src={process.env.PUBLIC_URL + "/images/FileEvictions-Client.png"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Client page."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-        <img
+          <img
             src={process.env.PUBLIC_URL + "/images/FileEvictions-Tasks.png"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Tasks page."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-
         </div>
 
-        <div className="col-sm-12 col-md-6 col-lg-6 pt-5">
-
-        <img
+        <div className="col-sm-12 col-md-6 col-lg-6 project__fileevictions-portal-layout">
+          <img
             src={process.env.PUBLIC_URL + "/images/FileEvictions-Messages.png"}
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Messages page."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-        <img
-            src={process.env.PUBLIC_URL + "/images/FileEvictions-Attorney-Agreement.png"}
+          <img
+            src={
+              process.env.PUBLIC_URL +
+              "/images/FileEvictions-Attorney-Agreement.png"
+            }
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Attorney onboarding page. Attorney-Client agreement section."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-        <img
-            src={process.env.PUBLIC_URL + "/images/FileEvictions-Attorney-Email.png"}
+          <img
+            src={
+              process.env.PUBLIC_URL +
+              "/images/FileEvictions-Attorney-Email.png"
+            }
             className="img-fluid w-100 mb-5 project__images"
-            alt="Ano Delivery active orders page."
-            style={{boxShadow: "0 3px 50px #00000020"}}
+            alt="FileEvictions Attorney onboarding page. Email Communication settings section."
+            style={{ boxShadow: "0 3px 50px #00000020" }}
           />
-          
-        </div>        
-
+        </div>
       </div>
 
       {/* MORE PROJECTS CAROUSEL */}
