@@ -317,7 +317,7 @@ export default function FileEvictions() {
       <div
         className="project__details-container project__additional-container row d-flex align-items-center justify-content-center mb-5"
         style={{ 
-          minHeight: "100vh",
+          // minHeight: "100vh",
           minHeight: "-webkit-fill-available" 
         }}
       >

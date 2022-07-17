@@ -475,7 +475,7 @@ export default function Bolivar() {
       <div
         className="project__details-container project__additional-container row align-items-center d-flex g-5"
         style={{
-          minHeight: "100vh",
+          // minHeight: "100vh",
           minHeight: "-webkit-fill-available",
           marginBottom: "100px",
         }}
