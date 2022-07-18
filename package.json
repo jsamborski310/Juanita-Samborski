@@ -27,7 +27,6 @@
         "google-auth-library": "^8.0.2",
         "googleapis": "^100.0.0",
         "gsap": "^3.10.4",
-        "netlify-lambda": "^2.0.15",
         "nodemailer": "^6.7.5",
         "react": "^18.0.0",
         "react-bootstrap": "^2.2.2",
@@ -36,7 +35,6 @@
         "react-router-hash-link": "^2.4.3",
         "react-scripts": "5.0.0",
         "serve": "^13.0.2",
-        "serverless-http": "^3.0.1",
         "web-vitals": "^2.1.4"
     },
     "eslintConfig": {
