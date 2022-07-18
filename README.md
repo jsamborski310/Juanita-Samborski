@@ -1,6 +1,6 @@
 # Portfolio
 
-This single page application, built in React, provides information about my skills, experience, and applications I have developed. 
+This multipe-page application, built in React, provides information about my skills, experience, applications I have developed, and client projects worked on. 
 
 ## Table of Contents
 
@@ -12,9 +12,9 @@ This single page application, built in React, provides information about my skil
 
 ## Description
 
-Prior to embarking on building my first React application, I laid out the design in Adobe XD. The portfolio provides future potential employers with an overview about myself, the tools I'm skilled with, and applications I have built, and various way on how to reach me. 
+Prior to embarking on building my first React application, I laid out the design in Adobe XD. The portfolio provides future potential employers with an overview about myself, the tools I'm skilled with, applications I have built, websites I've developed for clients, and various way on how to reach me. 
 
-Using the Bootstrap framework and CSS, I implemented the design. There are a few custom elements I incorporated: offcanvas menu and accordion. 
+Using the Bootstrap framework and CSS, I implemented the design. There are a few custom elements I incorporated: offcanvas menu, accordion, scroll animation. 
 
 The UI is clean, polished, and the User will be able to navigate the site with ease. I have also ensured that it is mobile responsive.
 
