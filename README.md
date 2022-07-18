@@ -46,7 +46,7 @@ Preview screens of the application.
 
 GitHub Repo: https://github.com/jsamborski310/portfolio
 
-GitHub Pages: https://jsamborski310.github.io/portfolio/
+Deployed: https://juanitasamborski.com
 
 
 ## Questions
