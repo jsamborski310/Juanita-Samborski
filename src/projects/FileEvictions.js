@@ -409,42 +409,48 @@ export default function FileEvictions() {
       <div className="project__details-container project__carousel">
         {isMobile ? (
           <Carousel show={2}>
-            {proProjectList.map(({ id, image, title, number, role }) => (
+            {proProjectList.map(({ id, image, title, number, role, slug }) => (
               <div className="project__more-container">
                 <div key={id} style={{ padding: "50px" }}>
+                <a href={/project/ + slug}>
                   <img
                     src={process.env.PUBLIC_URL + image}
                     alt={title}
                     className="project__more-images"
                   />
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center"
+                  style={{color: "#000000"}}>
                     <p className="project__more-number pe-4">{number}</p>
                     <div>
                       <h4>{title}</h4>
                       <p>{role}</p>
                     </div>
                   </div>
+                  </a>
                 </div>
               </div>
             ))}
           </Carousel>
         ) : (
           <Carousel show={1}>
-            {proProjectList.map(({ id, image, title, number, role }) => (
+            {proProjectList.map(({ id, image, title, number, role, slug }) => (
               <div className="project__more-container">
                 <div key={id} style={{ padding: "50px" }}>
+                <a href={/project/ + slug}>
                   <img
                     src={process.env.PUBLIC_URL + image}
                     alt={title}
                     className="project__more-images"
                   />
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center"
+                  style={{color: "#000000"}}>
                     <p className="project__more-number pe-4">{number}</p>
                     <div>
                       <h4>{title}</h4>
                       <p>{role}</p>
                     </div>
                   </div>
+                  </a>
                 </div>
               </div>
             ))}
