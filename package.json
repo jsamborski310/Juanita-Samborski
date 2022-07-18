@@ -6,7 +6,7 @@
         "start": "node server/index.js",
         "develop": "concurrently \"cd client && npm run start\" \"node server/index.js\"",
         "install": "cd client && npm i",
-        "build": "concurrently \"cd client && npm run build\" \"node server/index.js\""
+        "build": "cd client && npm run build"
     },
     "keywords": [],
     "author": "",
